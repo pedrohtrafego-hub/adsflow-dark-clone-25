@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Ads Flow Design System - Dark Mode Marketing Agency */
+
+@layer base {
+  :root {
+    /* Core Brand Colors - Dark Theme */
+    --background: 0 0% 0%;
+    --foreground: 0 0% 100%;
+    
+    --card: 220 13% 8%;
+    --card-foreground: 0 0% 100%;
+    
+    --popover: 220 13% 8%;
+    --popover-foreground: 0 0% 100%;
+    
+    /* Electric Cyan/Blue Accent */
+    --primary: 187 85% 53%;
+    --primary-foreground: 0 0% 0%;
+    
+    --secondary: 220 13% 12%;
+    --secondary-foreground: 0 0% 100%;
+    
+    --muted: 220 13% 15%;
+    --muted-foreground: 240 5% 65%;
+    
+    --accent: 187 85% 53%;
+    --accent-foreground: 0 0% 0%;
+    
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    
+    --border: 220 13% 15%;
+    --input: 220 13% 12%;
+    --ring: 187 85% 53%;
+    
+    /* Custom Marketing Theme Variables */
+    --hero-gradient: linear-gradient(135deg, hsl(220, 13%, 8%) 0%, hsl(220, 13%, 12%) 100%);
+    --accent-gradient: linear-gradient(90deg, hsl(187, 85%, 53%) 0%, hsl(207, 85%, 58%) 100%);
+    --dark-section: 220 13% 6%;
+    --text-secondary: 240 5% 75%;
+    
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-inter;
+  }
+}
+
+@layer components {
+  /* Hero Section with Particles Animation */
+  .hero-particles {
+    background: linear-gradient(135deg, hsl(var(--background)) 0%, hsl(var(--dark-section)) 100%);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .hero-particles::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+      radial-gradient(circle at 20% 30%, hsl(var(--primary)) 0.5px, transparent 0.5px),
+      radial-gradient(circle at 80% 70%, hsl(var(--primary)) 0.3px, transparent 0.3px),
+      radial-gradient(circle at 40% 80%, hsl(var(--primary)) 0.4px, transparent 0.4px);
+    background-size: 200px 200px, 150px 150px, 300px 300px;
+    animation: float-particles 20s infinite linear;
+    opacity: 0.3;
+  }
+  
+  @keyframes float-particles {
+    0% { transform: translateY(0px) translateX(0px); }
+    33% { transform: translateY(-10px) translateX(5px); }
+    66% { transform: translateY(-5px) translateX(-3px); }
+    100% { transform: translateY(0px) translateX(0px); }
+  }
+  
+  /* Gradient Text Effect */
+  .gradient-text {
+    background: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  /* Button Variants */
+  .btn-primary {
+    @apply bg-primary text-primary-foreground hover:bg-primary/90 font-medium px-8 py-4 rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-lg;
+    box-shadow: 0 4px 20px hsl(var(--primary) / 0.3);
+  }
+  
+  .btn-outline {
+    @apply border-2 border-primary text-primary bg-transparent hover:bg-primary hover:text-primary-foreground font-medium px-8 py-4 rounded-lg transition-all duration-300 hover:scale-105;
+  }
+  
+  /* Service Cards */
+  .service-card {
+    @apply bg-card border border-border rounded-xl p-6 hover:border-primary/50 transition-all duration-300 hover:transform hover:scale-105;
+    box-shadow: 0 4px 15px hsl(var(--background) / 0.1);
+  }
+  
+  .service-card:hover {
+    box-shadow: 0 8px 30px hsl(var(--primary) / 0.2);
+  }
+  
+  /* Section Backgrounds */
+  .section-dark {
+    background: hsl(var(--dark-section));
+  }
+  
+  .section-gradient {
+    background: var(--hero-gradient);
+  }
+  
+  /* Check List Items */
+  .check-item {
+    @apply flex items-center gap-3 mb-3 text-foreground;
+  }
+  
+  .check-icon {
+    @apply w-5 h-5 text-primary flex-shrink-0;
+  }
+}
