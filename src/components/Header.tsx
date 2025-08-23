@@ -22,8 +22,8 @@ const Header = () => {
             </span>
           </div>
 
-          {/* Desktop Navigation & CTA Button */}
-          <div className="hidden lg:flex items-center space-x-8">
+          {/* Desktop Navigation & CTA Button - Moved more to the right */}
+          <div className="hidden lg:flex items-center space-x-8 ml-auto">
             {navItems.map((item) => (
               <a
                 key={item.label}
