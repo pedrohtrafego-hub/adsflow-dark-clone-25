@@ -7,8 +7,8 @@ const HeroSection = () => {
       <CometEffect />
       <div className="container mx-auto px-4 lg:px-8 z-10">
         <div className="w-full">
-          {/* Content - Aligned to match header logo "A" position */}
-          <div className="text-left mb-20">
+          {/* Content - Aligned exactly with header logo "A" */}
+          <div className="text-left mb-20 px-4 lg:px-8">
             {/* Main Title */}
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight text-white">
               Agência Ads Flow
