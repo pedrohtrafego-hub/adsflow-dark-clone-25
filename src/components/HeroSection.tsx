@@ -26,7 +26,7 @@ const HeroSection = () => {
           </div>
 
           {/* CTA Buttons - Moved down, centered */}
-          <div className="flex justify-center mb-12 mt-32">
+          <div className="flex justify-center mb-12 mt-48">
             <div className="flex flex-col sm:flex-row gap-4">
               <a
                 href="https://web.whatsapp.com/send?phone=5534999000559&text=Ol%C3%A1%21%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20servi%C3%A7os%20de%20marketing..."
@@ -46,7 +46,7 @@ const HeroSection = () => {
           </div>
 
           {/* Scroll Indicator - Moved down */}
-          <div className="flex justify-center mb-8">
+          <div className="flex justify-center mb-8 mt-8">
             <div className="animate-bounce">
               <ChevronDown size={28} className="text-primary" />
             </div>
