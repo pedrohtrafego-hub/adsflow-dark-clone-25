@@ -7,8 +7,8 @@ const HeroSection = () => {
       <CometEffect />
       <div className="container mx-auto px-4 lg:px-8 z-10">
         <div className="w-full">
-          {/* Content - Aligned exactly with header logo "A" */}
-          <div className="text-left mb-64 px-4 lg:px-8" style={{ marginLeft: '-2rem' }}>
+          {/* Content - Moved down about 2cm more */}
+          <div className="text-left mb-40 px-4 lg:px-8 pt-16" style={{ marginLeft: '-2rem' }}>
             {/* Main Title */}
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight text-white">
               Agência Ads Flow
@@ -25,8 +25,8 @@ const HeroSection = () => {
             </p>
           </div>
 
-          {/* CTA Buttons - Very close to scroll indicator */}
-          <div className="flex justify-center mb-4">
+          {/* CTA Buttons - Moved up for better mobile layout */}
+          <div className="flex justify-center mb-8">
             <div className="flex flex-col sm:flex-row gap-4">
               <a
                 href="https://web.whatsapp.com/send?phone=5534999000559&text=Ol%C3%A1%21%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20servi%C3%A7os%20de%20marketing..."
@@ -45,7 +45,7 @@ const HeroSection = () => {
             </div>
           </div>
 
-          {/* Scroll Indicator - Very close to buttons */}
+          {/* Scroll Indicator */}
           <div className="flex justify-center mb-8">
             <a 
               href="#sobre"
