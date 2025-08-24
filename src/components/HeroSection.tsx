@@ -8,7 +8,7 @@ const HeroSection = () => {
       <div className="container mx-auto px-4 lg:px-8 z-10">
         <div className="w-full">
           {/* Content - Aligned exactly with header logo "A" */}
-          <div className="text-left mb-48 px-4 lg:px-8" style={{ marginLeft: '-2rem' }}>
+          <div className="text-left mb-64 px-4 lg:px-8" style={{ marginLeft: '-2rem' }}>
             {/* Main Title */}
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight text-white">
               Agência Ads Flow
@@ -25,9 +25,9 @@ const HeroSection = () => {
             </p>
           </div>
 
-          {/* CTA Buttons - Close to scroll indicator */}
-          <div className="flex justify-center">
-            <div className="flex flex-col sm:flex-row gap-4 mb-8">
+          {/* CTA Buttons - Very close to scroll indicator */}
+          <div className="flex justify-center mb-4">
+            <div className="flex flex-col sm:flex-row gap-4">
               <a
                 href="https://web.whatsapp.com/send?phone=5534999000559&text=Ol%C3%A1%21%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20servi%C3%A7os%20de%20marketing..."
                 target="_blank"
@@ -45,7 +45,7 @@ const HeroSection = () => {
             </div>
           </div>
 
-          {/* Scroll Indicator - Close to buttons */}
+          {/* Scroll Indicator - Very close to buttons */}
           <div className="flex justify-center mb-8">
             <a 
               href="#sobre"

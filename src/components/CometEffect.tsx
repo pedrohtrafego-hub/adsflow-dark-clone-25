@@ -3,6 +3,43 @@ import { Canvas, useFrame } from '@react-three/fiber';
 import { Points, PointMaterial } from '@react-three/drei';
 import * as THREE from 'three';
 
+// Create star-shaped texture
+function createStarTexture() {
+  const canvas = document.createElement('canvas');
+  canvas.width = 64;
+  canvas.height = 64;
+  const context = canvas.getContext('2d')!;
+  
+  const centerX = canvas.width / 2;
+  const centerY = canvas.height / 2;
+  const radius = 20;
+  
+  context.fillStyle = '#ffffff';
+  context.beginPath();
+  
+  // Draw a 5-pointed star
+  for (let i = 0; i < 5; i++) {
+    const angle = (i * 2 * Math.PI) / 5;
+    const x = centerX + Math.cos(angle) * radius;
+    const y = centerY + Math.sin(angle) * radius;
+    
+    if (i === 0) context.moveTo(x, y);
+    else context.lineTo(x, y);
+    
+    // Inner point
+    const innerAngle = angle + Math.PI / 5;
+    const innerX = centerX + Math.cos(innerAngle) * (radius * 0.4);
+    const innerY = centerY + Math.sin(innerAngle) * (radius * 0.4);
+    context.lineTo(innerX, innerY);
+  }
+  
+  context.closePath();
+  context.fill();
+  
+  const texture = new THREE.CanvasTexture(canvas);
+  return texture;
+}
+
 function CometParticles() {
   const ref = useRef<THREE.Points>(null);
   
@@ -44,10 +81,11 @@ function CometParticles() {
       <PointMaterial
         transparent
         color="#00d4ff"
-        size={0.06}
+        size={0.08}
         sizeAttenuation={true}
         depthWrite={false}
         opacity={0.8}
+        map={createStarTexture()}
       />
     </Points>
   );
@@ -149,10 +187,11 @@ function Stars() {
       <PointMaterial
         transparent
         color="#ffffff"
-        size={0.03}
+        size={0.04}
         sizeAttenuation={true}
         depthWrite={false}
         opacity={0.9}
+        map={createStarTexture()}
       />
     </Points>
   );
