@@ -3,7 +3,7 @@ import teamMeeting from "@/assets/team-meeting.jpg";
 
 const AboutSection = () => {
   return (
-    <section id="sobre" className="py-8 lg:py-12 bg-background">
+    <section id="sobre" className="py-8 lg:py-12 bg-background scroll-mt-16">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Content */}

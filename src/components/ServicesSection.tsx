@@ -51,7 +51,7 @@ const ServicesSection = () => {
   ];
 
   return (
-    <section id="servicos" className="py-8 lg:py-12 bg-background relative overflow-hidden">
+    <section id="servicos" className="py-8 lg:py-12 bg-background relative overflow-hidden scroll-mt-16">
       <StarsEffect />
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
         {/* Header */}
