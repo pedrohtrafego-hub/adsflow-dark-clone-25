@@ -1,4 +1,5 @@
 import { Star, Trophy } from "lucide-react";
+import StarsEffect from "./StarsEffect";
 
 const TestimonialsSection = () => {
   const testimonials = [
@@ -26,8 +27,9 @@ const TestimonialsSection = () => {
   ];
 
   return (
-    <section id="depoimentos" className="py-8 lg:py-12 bg-background">
-      <div className="container mx-auto px-4 lg:px-8">
+    <section id="depoimentos" className="py-8 lg:py-12 bg-background relative overflow-hidden">
+      <StarsEffect />
+      <div className="container mx-auto px-4 lg:px-8 relative z-10">
         {/* Header */}
         <div className="text-center mb-12">
           <h2 className="text-3xl lg:text-5xl font-bold mb-6">

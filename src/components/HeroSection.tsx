@@ -8,7 +8,7 @@ const HeroSection = () => {
       <div className="container mx-auto px-4 lg:px-8 z-10">
         <div className="w-full">
           {/* Content - Aligned exactly with header logo "A" */}
-          <div className="text-left mb-20 px-4 lg:px-8">
+          <div className="text-left mb-32 px-4 lg:px-8" style={{ marginLeft: '-2rem' }}>
             {/* Main Title */}
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight text-white">
               Agência Ads Flow
@@ -26,7 +26,7 @@ const HeroSection = () => {
           </div>
 
           {/* CTA Buttons - Moved down, centered */}
-          <div className="flex justify-center mb-12 mt-48">
+          <div className="flex justify-center mb-8 mt-32">
             <div className="flex flex-col sm:flex-row gap-4">
               <a
                 href="https://web.whatsapp.com/send?phone=5534999000559&text=Ol%C3%A1%21%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20servi%C3%A7os%20de%20marketing..."
@@ -37,7 +37,7 @@ const HeroSection = () => {
                 Fale com um especialista
               </a>
               <a
-                href="#servicos"
+                href="#sobre"
                 className="btn-outline text-sm px-4 py-2"
               >
                 Nossos Serviços
@@ -45,11 +45,14 @@ const HeroSection = () => {
             </div>
           </div>
 
-          {/* Scroll Indicator - Moved down */}
+          {/* Scroll Indicator - Moved down and clickable */}
           <div className="flex justify-center mb-8 mt-8">
-            <div className="animate-bounce">
+            <a 
+              href="#sobre"
+              className="animate-bounce cursor-pointer hover:scale-110 transition-transform"
+            >
               <ChevronDown size={28} className="text-primary" />
-            </div>
+            </a>
           </div>
         </div>
       </div>

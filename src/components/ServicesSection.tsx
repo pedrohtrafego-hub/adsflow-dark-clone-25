@@ -1,4 +1,5 @@
-import { Search, Share2, TrendingUp, Globe, Target, BarChart3, Megaphone, Smartphone, Mail } from "lucide-react";
+import { Clock, Globe, BarChart3, Search, Share2, TrendingUp, Target, Users, MessageSquare, Megaphone, Smartphone, Mail } from "lucide-react";
+import StarsEffect from "./StarsEffect";
 
 const ServicesSection = () => {
   const services = [
@@ -50,8 +51,9 @@ const ServicesSection = () => {
   ];
 
   return (
-    <section id="servicos" className="py-8 lg:py-12 bg-background">
-      <div className="container mx-auto px-4 lg:px-8">
+    <section id="servicos" className="py-8 lg:py-12 bg-background relative overflow-hidden">
+      <StarsEffect />
+      <div className="container mx-auto px-4 lg:px-8 relative z-10">
         {/* Header */}
         <div className="text-center mb-12">
           <h2 className="text-3xl lg:text-5xl font-bold mb-6">
