@@ -6,47 +6,42 @@ const ServicesSection = () => {
     {
       icon: Search,
       title: "Google Ads",
-      description: "Campanhas otimizadas para máximo ROI no Google Ads, Search e Display Network."
+      description: "Campanhas otimizadas para máximo ROI no Google Ads, Search e Display Network"
     },
     {
       icon: Share2,
       title: "Meta Ads",
-      description: "Estratégias avançadas no Facebook e Instagram para engajamento e conversões."
+      description: "Estratégias avançadas no Facebook e Instagram para engajamento e conversões"
     },
     {
       icon: TrendingUp,
       title: "Growth Marketing",
-      description: "Metodologias de crescimento acelerado baseadas em dados e experimentação."
+      description: "Metodologias de crescimento acelerado baseadas em dados e experimentação"
     },
     {
       icon: Globe,
       title: "Landing Pages",
-      description: "Páginas de alta conversão otimizadas para campanhas de tráfego pago."
+      description: "Páginas de alta conversão otimizadas para campanhas de tráfego pago"
     },
     {
       icon: Target,
       title: "SEO & SEM",
-      description: "Otimização orgânica e paga para dominar os resultados de busca."
+      description: "Otimização orgânica e paga para dominar os resultados de busca"
     },
     {
       icon: BarChart3,
       title: "Analytics & BI",
-      description: "Dashboards e relatórios para acompanhar performance em tempo real."
+      description: "Dashboards e relatórios para acompanhar performance em tempo real"
     },
     {
       icon: Megaphone,
       title: "Criação de Conteúdo",
-      description: "Materiais criativos que convertem, do copy aos vídeos publicitários."
-    },
-    {
-      icon: Smartphone,
-      title: "Marketing Mobile",
-      description: "Campanhas específicas para dispositivos móveis e apps."
+      description: "Materiais criativos que convertem, do copy aos vídeos publicitários"
     },
     {
       icon: Mail,
       title: "Email Marketing",
-      description: "Automações e campanhas de email para nutrição e conversão de leads."
+      description: "Automações e campanhas de email para nutrição e conversão de leads"
     }
   ];
 

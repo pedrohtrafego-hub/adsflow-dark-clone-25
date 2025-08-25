@@ -1,4 +1,4 @@
-import { CheckCircle, Target, TrendingUp, Users, BarChart3, Zap, Award, Clock, Shield } from "lucide-react";
+import { CheckCircle, Target, TrendingUp, Users, BarChart3, Zap, Award, Clock, Shield, User } from "lucide-react";
 
 const WhyChooseSection = () => {
   const benefits = [
@@ -46,6 +46,11 @@ const WhyChooseSection = () => {
       icon: TrendingUp,
       title: "ROI garantido",
       description: "Foco em resultados que impactam o faturamento"
+    },
+    {
+      icon: User,
+      title: "Foco no cliente",
+      description: "Estratégias alinhadas com seus objetivos e necessidades reais"
     }
   ];
 

@@ -26,7 +26,7 @@ const AboutSection = () => {
               <div>
                 <h3 className="font-semibold text-lg">Equipe Certificada</h3>
                 <p className="text-text-secondary">
-                  Certificados pelo Google e Meta para garantir as melhores práticas
+                  Reconhecidos pelo Google e Meta, aplicamos as melhores práticas do mercado digital.
                 </p>
               </div>
             </div>
