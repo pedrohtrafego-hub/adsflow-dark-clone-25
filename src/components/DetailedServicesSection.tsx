@@ -63,14 +63,35 @@ const DetailedServicesSection = () => {
       <div className="container mx-auto px-4 lg:px-8">
         {services.map((service, index) => (
           <div key={service.id} className={`${index > 0 ? 'mt-20' : ''}`}>
-            <div className={`grid lg:grid-cols-2 gap-12 lg:gap-16 items-center ${index % 2 === 1 ? 'lg:grid-flow-col-dense' : ''}`}>
+            <div className="grid lg:grid-cols-3 gap-8 lg:gap-12 items-center">
+              {/* Image - Left for Google and Growth, Right for Meta */}
+              {service.image && (
+                <div className={`${
+                  service.id === 'meta-ads' 
+                    ? 'lg:order-2' 
+                    : 'lg:order-1'
+                }`}>
+                  <div className="rounded-xl overflow-hidden border border-white/10 max-w-sm mx-auto">
+                    <img
+                      src={service.image}
+                      alt={service.imageAlt}
+                      className="w-full h-64 object-cover"
+                    />
+                  </div>
+                </div>
+              )}
+
               {/* Content */}
-              <div className={`space-y-8 ${index % 2 === 1 ? 'lg:col-start-2' : ''}`}>
-                <div className="flex items-center gap-4 mb-6">
+              <div className={`lg:col-span-2 space-y-6 ${
+                service.id === 'meta-ads' 
+                  ? 'lg:order-1' 
+                  : 'lg:order-2'
+              }`}>
+                <div className="flex items-center gap-4 mb-4">
                   <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
                     <service.icon className="w-6 h-6 text-primary" />
                   </div>
-                  <h2 className="text-3xl lg:text-4xl font-bold text-white">
+                  <h2 className="text-2xl lg:text-3xl font-bold text-white">
                     {service.title}
                   </h2>
                 </div>
@@ -80,11 +101,11 @@ const DetailedServicesSection = () => {
                 </p>
 
                 {/* Benefits List */}
-                <div className="space-y-4">
+                <div className="space-y-3">
                   {service.benefits.map((benefit, benefitIndex) => (
                     <div key={benefitIndex} className="flex items-start gap-3">
                       <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                      <span className="text-gray-300">{benefit}</span>
+                      <span className="text-gray-300 text-sm">{benefit}</span>
                     </div>
                   ))}
                 </div>
@@ -101,26 +122,12 @@ const DetailedServicesSection = () => {
                     }
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="btn-primary text-lg"
+                    className="btn-primary"
                   >
                     {service.cta}
                   </a>
                 </div>
               </div>
-
-              {/* Image */}
-              {service.image && (
-                <div className={`${index % 2 === 1 ? 'lg:col-start-1 lg:row-start-1' : ''}`}>
-                  <div className="rounded-2xl overflow-hidden border border-white/10">
-                    <img
-                      src={service.image}
-                      alt={service.imageAlt}
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                </div>
-              )}
-
             </div>
           </div>
         ))}
