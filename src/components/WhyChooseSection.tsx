@@ -95,7 +95,7 @@ const WhyChooseSection = () => {
         {/* Bottom CTA */}
         <div className="text-center mt-16">
           <a
-            href="https://web.whatsapp.com/send?phone=5534999000559&text=Ol%C3%A1%21%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20servi%C3%A7os%20de%20marketing..."
+            href="https://wa.me/5534999000559?text=Ol%C3%A1%21%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20servi%C3%A7os%20de%20marketing..."
             target="_blank"
             rel="noopener noreferrer"
             className="btn-primary text-lg"

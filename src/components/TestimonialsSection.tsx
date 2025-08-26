@@ -8,7 +8,7 @@ const TestimonialsSection = () => {
       name: "Paulo H. Silva",
       company: "Loja de Móveis",
       rating: 5,
-      text: "A parceria com a Ads Flow transformou totalmente nossa presença digital. As campanhas de tráfego pago e os conteúdos estratégicos nas redes sociais trouxeram um aumento significativo no fluxo de clientes na loja. Hoje, temos um site profissional e uma marca muito mais forte na região."
+      text: "A Ads Flow transformou nossa presença digital. Com tráfego pago, redes sociais e um site profissional, aumentamos clientes e fortalecemos nossa marca na região."
     },
     {
       id: 2,
@@ -42,11 +42,11 @@ const TestimonialsSection = () => {
         </div>
 
         {/* Testimonials Grid */}
-        <div className="grid md:grid-cols-3 gap-8 mb-16">
+        <div className="grid md:grid-cols-3 gap-6 mb-16">
           {testimonials.map((testimonial) => (
             <div
               key={testimonial.id}
-              className="bg-card rounded-xl border border-border p-8 hover:border-primary/50 transition-all duration-300 hover:transform hover:scale-105"
+              className="bg-card rounded-xl border border-border p-6 hover:border-primary/50 transition-all duration-300 hover:transform hover:scale-105"
             >
               {/* Rating Stars */}
               <div className="flex items-center gap-1 mb-6">

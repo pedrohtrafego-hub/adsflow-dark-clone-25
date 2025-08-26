@@ -7,12 +7,12 @@ function BlinkingStars() {
   const ref = useRef<THREE.Points>(null);
   
   const particlesPosition = useMemo(() => {
-    const positions = new Float32Array(150 * 3); // Poucas estrelas
+    const positions = new Float32Array(400 * 3); // Mais estrelas
     
-    for (let i = 0; i < 150; i++) {
-      positions[i * 3] = (Math.random() - 0.5) * 20; // x
-      positions[i * 3 + 1] = (Math.random() - 0.5) * 15; // y
-      positions[i * 3 + 2] = (Math.random() - 0.5) * 10; // z
+    for (let i = 0; i < 400; i++) {
+      positions[i * 3] = (Math.random() - 0.5) * 25; // x
+      positions[i * 3 + 1] = (Math.random() - 0.5) * 20; // y
+      positions[i * 3 + 2] = (Math.random() - 0.5) * 15; // z
     }
     
     return positions;

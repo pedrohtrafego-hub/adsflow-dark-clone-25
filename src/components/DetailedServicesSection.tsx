@@ -2,6 +2,7 @@ import { CheckCircle, Search, Share2, TrendingUp } from "lucide-react";
 import googleAdsDashboard from "@/assets/google-ads-dashboard.jpg";
 import metaAdsDashboard from "@/assets/meta-ads-dashboard.jpg";
 import growthMarketing from "@/assets/growth-marketing.jpg";
+import StarsEffect from "./StarsEffect";
 
 const DetailedServicesSection = () => {
   const services = [
@@ -59,23 +60,24 @@ const DetailedServicesSection = () => {
   ];
 
   return (
-    <section className="py-8 lg:py-12 bg-background">
-      <div className="container mx-auto px-4 lg:px-8">
+    <section className="py-8 lg:py-12 bg-background relative overflow-hidden">
+      <StarsEffect />
+      <div className="container mx-auto px-4 lg:px-8 relative z-10">
         {services.map((service, index) => (
           <div key={service.id} className={`${index > 0 ? 'mt-20' : ''}`}>
-            <div className="grid lg:grid-cols-3 gap-8 lg:gap-12 items-center">
+            <div className="grid lg:grid-cols-3 gap-8 lg:gap-12 items-start">
               {/* Image - Left for Google and Growth, Right for Meta */}
               {service.image && (
                 <div className={`${
                   service.id === 'meta-ads' 
                     ? 'lg:order-2' 
                     : 'lg:order-1'
-                }`}>
-                  <div className="rounded-xl overflow-hidden border border-white/10 max-w-sm mx-auto">
+                } flex justify-center`}>
+                  <div className="rounded-xl overflow-hidden border border-white/10 w-80 h-48">
                     <img
                       src={service.image}
                       alt={service.imageAlt}
-                      className="w-full h-64 object-cover"
+                      className="w-full h-full object-cover"
                     />
                   </div>
                 </div>
@@ -91,12 +93,12 @@ const DetailedServicesSection = () => {
                   <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
                     <service.icon className="w-6 h-6 text-primary" />
                   </div>
-                  <h2 className="text-2xl lg:text-3xl font-bold text-white">
+                  <h2 className="text-3xl lg:text-4xl font-bold text-white">
                     {service.title}
                   </h2>
                 </div>
 
-                <p className="text-lg text-gray-300 leading-relaxed">
+                <p className="text-2xl lg:text-3xl text-gray-300 leading-relaxed font-medium">
                   {service.description}
                 </p>
 
@@ -115,10 +117,10 @@ const DetailedServicesSection = () => {
                   <a
                     href={
                       service.id === "google-ads" 
-                        ? "https://web.whatsapp.com/send?phone=5534999000559&text=Ol%C3%A1!%20%F0%9F%98%80%0AGostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20tr%C3%A1fego%20pago%20no%20Google%20Ads..."
+                        ? "https://wa.me/5534999000559?text=Ol%C3%A1!%20%F0%9F%98%80%0AGostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20tr%C3%A1fego%20pago%20no%20Google%20Ads..."
                         : service.id === "meta-ads"
-                        ? "https://web.whatsapp.com/send?phone=5534999000559&text=Ol%C3%A1!%20%F0%9F%98%84%0AGostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20tr%C3%A1fego%20pago%20no%20Meta%20Ads..."
-                        : "https://web.whatsapp.com/send?phone=5534999000559&text=Ol%C3%A1%21%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20servi%C3%A7os%20de%20marketing..."
+                        ? "https://wa.me/5534999000559?text=Ol%C3%A1!%20%F0%9F%98%84%0AGostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20tr%C3%A1fego%20pago%20no%20Meta%20Ads..."
+                        : "https://wa.me/5534999000559?text=Ol%C3%A1%21%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20servi%C3%A7os%20de%20marketing..."
                     }
                     target="_blank"
                     rel="noopener noreferrer"

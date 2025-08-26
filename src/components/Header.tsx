@@ -23,7 +23,7 @@ const Header = () => {
           </div>
 
           {/* Desktop Navigation & CTA Button - Positioned at far right */}
-          <div className="hidden lg:flex items-center space-x-8 ml-auto mr-4 lg:mr-8">
+          <div className="hidden md:flex items-center space-x-8 ml-auto mr-4 lg:mr-8">
             {navItems.map((item) => (
               <a
                 key={item.label}
@@ -34,7 +34,7 @@ const Header = () => {
               </a>
             ))}
             <a
-              href="https://web.whatsapp.com/send?phone=5534999000559&text=Ol%C3%A1%21%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20servi%C3%A7os%20de%20marketing..."
+              href="https://wa.me/5534999000559?text=Ol%C3%A1%21%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20servi%C3%A7os%20de%20marketing..."
               target="_blank"
               rel="noopener noreferrer"
               className="btn-primary text-sm px-4 py-2"
@@ -49,7 +49,7 @@ const Header = () => {
             {/* Mobile Menu Button */}
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="lg:hidden text-foreground hover:text-primary transition-colors"
+              className="md:hidden text-foreground hover:text-primary transition-colors"
             >
               {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -58,7 +58,7 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="lg:hidden bg-card border-t border-border">
+          <div className="md:hidden bg-card border-t border-border">
             <nav className="py-4 space-y-4">
               {navItems.map((item) => (
                 <a
@@ -72,7 +72,7 @@ const Header = () => {
               ))}
               <div className="px-4 pt-2">
                 <a
-                  href="https://web.whatsapp.com/send?phone=5534999000559&text=Ol%C3%A1%21%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20servi%C3%A7os%20de%20marketing..."
+                  href="https://wa.me/5534999000559?text=Ol%C3%A1%21%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20servi%C3%A7os%20de%20marketing..."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn-primary w-full block text-center"
