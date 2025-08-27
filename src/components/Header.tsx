@@ -22,8 +22,8 @@ const Header = () => {
             </span>
           </div>
 
-          {/* Desktop Navigation & CTA Button - Positioned at far right */}
-          <div className="hidden md:flex items-center space-x-8 ml-auto mr-4 lg:mr-8">
+          {/* Desktop Navigation & CTA Button - Show at tablet and above */}
+          <div className="hidden lg:flex items-center space-x-8 ml-auto mr-4 lg:mr-8">
             {navItems.map((item) => (
               <a
                 key={item.label}
@@ -43,13 +43,34 @@ const Header = () => {
             </a>
           </div>
 
+          {/* Tablet Navigation - Horizontal layout */}
+          <div className="hidden md:flex lg:hidden items-center space-x-6 ml-auto mr-4">
+            {navItems.map((item) => (
+              <a
+                key={item.label}
+                href={item.href}
+                className="text-foreground hover:text-primary transition-colors duration-300 font-medium text-sm"
+              >
+                {item.label}
+              </a>
+            ))}
+            <a
+              href="https://wa.me/5534999000559?text=Ol%C3%A1%21%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20servi%C3%A7os%20de%20marketing..."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary text-xs px-3 py-1.5"
+            >
+              Contato
+            </a>
+          </div>
+
           {/* Mobile Menu */}
           <div className="flex items-center gap-4">
             
             {/* Mobile Menu Button */}
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="md:hidden text-foreground hover:text-primary transition-colors"
+              className="md:hidden lg:hidden text-foreground hover:text-primary transition-colors"
             >
               {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>

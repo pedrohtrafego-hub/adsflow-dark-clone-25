@@ -65,35 +65,18 @@ const DetailedServicesSection = () => {
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
         {services.map((service, index) => (
           <div key={service.id} className={`${index > 0 ? 'mt-20' : ''}`}>
-            <div className="grid lg:grid-cols-3 gap-8 lg:gap-12 items-start">
-              {/* Image - Left for Google and Growth, Right for Meta */}
-              {service.image && (
-                <div className={`${
-                  service.id === 'meta-ads' 
-                    ? 'lg:order-2' 
-                    : 'lg:order-1'
-                } flex justify-center`}>
-                  <div className="rounded-xl overflow-hidden border border-white/10 w-80 h-48">
-                    <img
-                      src={service.image}
-                      alt={service.imageAlt}
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                </div>
-              )}
-
+            <div className="grid lg:grid-cols-12 gap-8 lg:gap-12 items-center">
               {/* Content */}
-              <div className={`lg:col-span-2 space-y-6 ${
+              <div className={`lg:col-span-8 space-y-6 ${
                 service.id === 'meta-ads' 
-                  ? 'lg:order-1' 
-                  : 'lg:order-2'
+                  ? 'lg:order-2' 
+                  : 'lg:order-1'
               }`}>
                 <div className="flex items-center gap-4 mb-4">
                   <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
                     <service.icon className="w-6 h-6 text-primary" />
                   </div>
-                  <h2 className="text-3xl lg:text-4xl font-bold text-white">
+                  <h2 className="text-4xl lg:text-5xl font-bold text-white">
                     {service.title}
                   </h2>
                 </div>
@@ -107,7 +90,7 @@ const DetailedServicesSection = () => {
                   {service.benefits.map((benefit, benefitIndex) => (
                     <div key={benefitIndex} className="flex items-start gap-3">
                       <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                      <span className="text-gray-300 text-sm">{benefit}</span>
+                      <span className="text-gray-300 text-lg">{benefit}</span>
                     </div>
                   ))}
                 </div>
@@ -130,6 +113,23 @@ const DetailedServicesSection = () => {
                   </a>
                 </div>
               </div>
+
+              {/* Image - Left for Google and Growth, Right for Meta */}
+              {service.image && (
+                <div className={`lg:col-span-4 ${
+                  service.id === 'meta-ads' 
+                    ? 'lg:order-1' 
+                    : 'lg:order-2'
+                } flex justify-center`}>
+                  <div className="rounded-xl overflow-hidden border border-white/10 w-full max-w-xs h-48">
+                    <img
+                      src={service.image}
+                      alt={service.imageAlt}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                </div>
+              )}
             </div>
           </div>
         ))}
