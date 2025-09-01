@@ -10,17 +10,17 @@ const HeroSection = () => {
           {/* Content - Text positioned further down, buttons moved up */}
           <div className="text-left mb-16 px-4 lg:px-8 pt-8" style={{ marginLeft: '-2rem' }}>
             {/* Main Title */}
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-4 leading-tight text-white">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight text-white">
               Agência Ads Flow
             </h1>
             
             {/* Subtitle with gradient - Fixed overflow issue */}
-            <h2 className="gradient-text text-5xl md:text-6xl lg:text-7xl font-bold mb-6 overflow-visible leading-normal">
+            <h2 className="gradient-text text-4xl md:text-5xl lg:text-6xl font-bold mb-6 overflow-visible leading-[1.2] pb-2">
               Marketing & Performance
             </h2>
 
             {/* Description */}
-            <p className="text-2xl md:text-3xl lg:text-4xl font-bold text-text-secondary leading-relaxed max-w-3xl mb-8">
+            <p className="text-xl md:text-2xl lg:text-3xl font-bold text-text-secondary leading-relaxed max-w-3xl mb-8">
               Transformamos cliques em clientes e conectamos marcas ao público certo.
             </p>
           </div>

@@ -24,8 +24,8 @@ const WhyChooseSection = () => {
     },
     {
       icon: Award,
-      title: "Equipe certificada em Google Ads, Analytics e Meta Ads",
-      description: "Profissionais certificados e em constante capacitação."
+      title: "Agência Certificada",
+      description: "Equipe certificada em Google e Meta Ads, Analytics (GA4) e Growth."
     },
     {
       icon: Clock,

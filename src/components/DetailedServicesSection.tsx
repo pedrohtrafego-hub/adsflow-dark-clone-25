@@ -72,12 +72,12 @@ const DetailedServicesSection = () => {
                   <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
                     <service.icon className="w-6 h-6 text-primary" />
                   </div>
-                  <h2 className="text-4xl lg:text-5xl font-bold text-white">
+                  <h2 className="text-3xl lg:text-4xl font-bold text-white whitespace-nowrap">
                     {service.title}
                   </h2>
                 </div>
 
-                <p className="text-xl lg:text-2xl text-gray-300 leading-relaxed font-medium">
+                <p className="text-lg lg:text-xl text-gray-300 leading-relaxed font-medium">
                   {service.description}
                 </p>
 
@@ -112,7 +112,7 @@ const DetailedServicesSection = () => {
 
               {/* Image */}
               {service.image && (
-                <div className="lg:col-span-4 lg:order-2 flex justify-center">
+                <div className="lg:col-span-4 lg:order-2 flex justify-center items-start pt-16">
                   <div className="rounded-xl overflow-hidden border border-white/10 w-full max-w-md h-64">
                     <img
                       src={service.image}

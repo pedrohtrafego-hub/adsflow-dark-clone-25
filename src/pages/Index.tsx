@@ -21,7 +21,6 @@ const Index = () => {
       <ServicesSection />
       <DetailedServicesSection />
       <TestimonialsSection />
-      <ContactForm />
       <FinalCtaSection />
       <Footer />
       <WhatsAppFloat />

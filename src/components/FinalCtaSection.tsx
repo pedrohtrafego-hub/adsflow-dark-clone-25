@@ -1,4 +1,5 @@
 import { CheckCircle, Target, TrendingUp, Zap } from "lucide-react";
+import ContactForm from "./ContactForm";
 
 const FinalCtaSection = () => {
   return (
@@ -6,7 +7,7 @@ const FinalCtaSection = () => {
       <div className="container mx-auto px-4 lg:px-8 text-center">
         {/* Header */}
         <div className="text-center mb-8">
-          <h2 className="text-4xl lg:text-6xl font-bold mb-6">
+          <h2 className="text-3xl lg:text-5xl font-bold mb-6">
             Vamos escalar os seus resultados com marketing de verdade?
           </h2>
         </div>
@@ -45,10 +46,17 @@ const FinalCtaSection = () => {
           </a>
         </div>
 
+        {/* Contact Form */}
+        <ContactForm />
+
         {/* Social Proof */}
         <div className="text-gray-300">
-          <p className="text-center">
-            📞 Reunião de alinhamento estratégico • ⚡ Implementação em até 48 horas • 📊 Relatórios semanais de performance
+          <p className="text-center mb-4">
+            📞 Reunião de alinhamento estratégico. ⚡ Implementação em até 48 horas. 📊 Relatórios semanais de performance.
+          </p>
+          <p className="text-center text-sm">
+            Segunda a Sexta, 8h às 18h.<br />
+            Sábado, 9h às 12h.
           </p>
         </div>
       </div>
