@@ -31,7 +31,7 @@ const TestimonialsSection = () => {
       <StarsEffect />
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
         {/* Header */}
-        <div className="text-center mb-12">
+        <div className="text-center mb-8">
           <h2 className="text-3xl lg:text-5xl font-bold mb-6">
             O que nossos <span className="gradient-text">clientes dizem</span>
           </h2>

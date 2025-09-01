@@ -1,4 +1,4 @@
-import { Clock, Globe, BarChart3, Search, Share2, TrendingUp, Target, Users, MessageSquare, Megaphone, Smartphone, Mail } from "lucide-react";
+import { Clock, Globe, BarChart3, Search, Share2, TrendingUp, Target, Users, MessageSquare, Megaphone, Smartphone, Mail, Bot } from "lucide-react";
 import StarsEffect from "./StarsEffect";
 
 const ServicesSection = () => {
@@ -41,7 +41,12 @@ const ServicesSection = () => {
     {
       icon: Mail,
       title: "Email Marketing",
-      description: "Automações e campanhas de email para nutrição e conversão de leads"
+      description: "Automações e campanhas de email para nutrição e conversão de leads."
+    },
+    {
+      icon: Bot,
+      title: "Automação com IA",
+      description: "Soluções inteligentes para otimizar tarefas e melhorar resultados."
     }
   ];
 
@@ -60,7 +65,7 @@ const ServicesSection = () => {
           </p>
         </div>
 
-        {/* Services Grid */}
+        {/* Services Grid - 3x3 Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
           {services.map((service, index) => (
             <div key={index} className="service-card">
@@ -69,7 +74,7 @@ const ServicesSection = () => {
               </div>
               <h3 className="text-xl font-semibold mb-3">{service.title}</h3>
               <p className="text-text-secondary leading-relaxed">
-                {service.description}.
+                {service.description}
               </p>
             </div>
           ))}

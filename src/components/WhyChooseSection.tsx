@@ -5,52 +5,47 @@ const WhyChooseSection = () => {
     {
       icon: Target,
       title: "Resultados mensuráveis e consistentes",
-      description: "Acompanhamento em tempo real de todas as métricas"
+      description: "Acompanhamento em tempo real de todas as métricas."
     },
     {
       icon: TrendingUp,
       title: "Estratégias digitais sob medida",
-      description: "Cada campanha é criada especificamente para seu negócio"
-    },
-    {
-      icon: Users,
-      title: "Equipe especializada e atualizada",
-      description: "Profissionais certificados e em constante capacitação"
+      description: "Cada campanha é criada especificamente para seu negócio."
     },
     {
       icon: BarChart3,
       title: "Análise de dados avançada",
-      description: "Insights profundos para otimizar continuamente"
+      description: "Insights profundos para otimizar continuamente."
     },
     {
       icon: Zap,
       title: "Implementação rápida",
-      description: "Campanhas no ar em até 48 horas"
+      description: "Campanhas no ar em até 48 horas."
     },
     {
       icon: Award,
-      title: "Certificações oficiais",
-      description: "Google Ads e Meta Ads Partner certificados"
+      title: "Equipe certificada em Google Ads, Analytics e Meta Ads",
+      description: "Profissionais certificados e em constante capacitação."
     },
     {
       icon: Clock,
       title: "Suporte dedicado",
-      description: "Atendimento personalizado durante todo o projeto"
+      description: "Atendimento personalizado durante todo o projeto."
     },
     {
       icon: Shield,
       title: "Transparência total",
-      description: "Relatórios detalhados e acesso completo aos dados"
+      description: "Relatórios detalhados e acesso completo aos dados."
     },
     {
       icon: TrendingUp,
       title: "ROI garantido",
-      description: "Foco em resultados que impactam o faturamento"
+      description: "Foco em resultados que impactam o faturamento."
     },
     {
       icon: User,
       title: "Foco no cliente",
-      description: "Estratégias alinhadas com seus objetivos e necessidades reais"
+      description: "Estratégias alinhadas com seus objetivos e necessidades."
     }
   ];
 

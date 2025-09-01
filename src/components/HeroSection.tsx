@@ -15,7 +15,7 @@ const HeroSection = () => {
             </h1>
             
             {/* Subtitle with gradient - Fixed overflow issue */}
-            <h2 className="gradient-text text-5xl md:text-6xl lg:text-7xl font-bold mb-6 overflow-visible" style={{ lineHeight: '1.1' }}>
+            <h2 className="gradient-text text-5xl md:text-6xl lg:text-7xl font-bold mb-6 overflow-visible leading-normal">
               Marketing & Performance
             </h2>
 

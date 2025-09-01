@@ -67,12 +67,8 @@ const DetailedServicesSection = () => {
           <div key={service.id} className={`${index > 0 ? 'mt-20' : ''}`}>
             <div className="grid lg:grid-cols-12 gap-8 lg:gap-12 items-center">
               {/* Content */}
-              <div className={`lg:col-span-8 space-y-6 ${
-                service.id === 'meta-ads' 
-                  ? 'lg:order-2' 
-                  : 'lg:order-1'
-              }`}>
-                <div className="flex items-center gap-4 mb-4">
+            <div className="lg:col-span-8 space-y-6 lg:order-1">
+                <div className="flex items-center gap-4 mb-2">
                   <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
                     <service.icon className="w-6 h-6 text-primary" />
                   </div>
@@ -81,7 +77,7 @@ const DetailedServicesSection = () => {
                   </h2>
                 </div>
 
-                <p className="text-2xl lg:text-3xl text-gray-300 leading-relaxed font-medium">
+                <p className="text-xl lg:text-2xl text-gray-300 leading-relaxed font-medium">
                   {service.description}
                 </p>
 
@@ -114,14 +110,10 @@ const DetailedServicesSection = () => {
                 </div>
               </div>
 
-              {/* Image - Left for Google and Growth, Right for Meta */}
+              {/* Image */}
               {service.image && (
-                <div className={`lg:col-span-4 ${
-                  service.id === 'meta-ads' 
-                    ? 'lg:order-1' 
-                    : 'lg:order-2'
-                } flex justify-center`}>
-                  <div className="rounded-xl overflow-hidden border border-white/10 w-full max-w-xs h-48">
+                <div className="lg:col-span-4 lg:order-2 flex justify-center">
+                  <div className="rounded-xl overflow-hidden border border-white/10 w-full max-w-md h-64">
                     <img
                       src={service.image}
                       alt={service.imageAlt}

@@ -4,23 +4,32 @@ const FinalCtaSection = () => {
   return (
     <section className="py-12 lg:py-20 section-gradient">
       <div className="container mx-auto px-4 lg:px-8 text-center">
-        <h2 className="text-3xl lg:text-5xl font-bold text-white mb-8">
-          Vamos escalar os seus resultados com marketing de verdade?
-        </h2>
+        {/* Header */}
+        <div className="text-center mb-8">
+          <h2 className="text-4xl lg:text-6xl font-bold mb-6">
+            Vamos escalar os seus resultados com marketing de verdade?
+          </h2>
+        </div>
         
         {/* Key Features */}
-        <div className="flex flex-col md:flex-row justify-center items-center gap-8 mb-12">
-          <div className="flex items-center gap-3 text-white">
-            <Target className="w-6 h-6 text-primary" />
-            <span className="font-medium">Estratégia Personalizada</span>
+        <div className="grid md:grid-cols-3 gap-6 mb-12">
+          <div className="text-center">
+            <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+              <span className="text-2xl">📞</span>
+            </div>
+            <h3 className="font-semibold text-lg mb-2">Reunião de alinhamento estratégico</h3>
           </div>
-          <div className="flex items-center gap-3 text-white">
-            <TrendingUp className="w-6 h-6 text-primary" />
-            <span className="font-medium">Resultados Mensuráveis</span>
+          <div className="text-center">
+            <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+              <span className="text-2xl">⚡</span>
+            </div>
+            <h3 className="font-semibold text-lg mb-2">Implementação em até 48 horas</h3>
           </div>
-          <div className="flex items-center gap-3 text-white">
-            <Zap className="w-6 h-6 text-primary" />
-            <span className="font-medium">Crescimento Acelerado</span>
+          <div className="text-center">
+            <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+              <span className="text-2xl">📊</span>
+            </div>
+            <h3 className="font-semibold text-lg mb-2">Relatórios semanais de performance</h3>
           </div>
         </div>
 
@@ -39,7 +48,7 @@ const FinalCtaSection = () => {
         {/* Social Proof */}
         <div className="text-gray-300">
           <p className="text-center">
-            📞 Reunião de Alinhamento estratégico • ⚡ Implementação em até 48h • 📊 Relatórios semanais de performance
+            📞 Reunião de alinhamento estratégico • ⚡ Implementação em até 48 horas • 📊 Relatórios semanais de performance
           </p>
         </div>
       </div>

@@ -8,6 +8,8 @@ import TestimonialsSection from "@/components/TestimonialsSection";
 import FinalCtaSection from "@/components/FinalCtaSection";
 import Footer from "@/components/Footer";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
+import BackToTop from "@/components/BackToTop";
+import ContactForm from "@/components/ContactForm";
 
 const Index = () => {
   return (
@@ -19,9 +21,11 @@ const Index = () => {
       <ServicesSection />
       <DetailedServicesSection />
       <TestimonialsSection />
+      <ContactForm />
       <FinalCtaSection />
       <Footer />
       <WhatsAppFloat />
+      <BackToTop />
     </div>
   );
 };
