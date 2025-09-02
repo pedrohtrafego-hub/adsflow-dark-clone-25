@@ -2,7 +2,7 @@ import { ChevronDown } from "lucide-react";
 import CometEffect from "./CometEffect";
 const HeroSection = () => {
   return <section className="hero-particles min-h-screen flex items-center justify-center relative pt-20 overflow-hidden">
-      <CometEffect className="rounded-none" />
+      <CometEffect />
       <div className="container mx-auto px-4 lg:px-8 z-10">
         <div className="w-full">
           {/* Content - Text positioned further down, buttons moved up */}
