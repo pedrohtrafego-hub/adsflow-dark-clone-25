@@ -2,7 +2,7 @@ import { ChevronDown } from "lucide-react";
 import CometEffect from "./CometEffect";
 const HeroSection = () => {
   return <section className="hero-particles min-h-screen flex items-center justify-center relative pt-20 overflow-hidden">
-      <CometEffect />
+      <CometEffect className="rounded-none" />
       <div className="container mx-auto px-4 lg:px-8 z-10">
         <div className="w-full">
           {/* Content - Text positioned further down, buttons moved up */}
@@ -28,7 +28,7 @@ const HeroSection = () => {
           {/* CTA Buttons - Moved closer to content */}
           <div className="flex justify-center mb-6">
             <div className="flex flex-col sm:flex-row gap-4">
-              <a href="https://wa.me/5534999000559?text=Ol%C3%A1%21%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20servi%C3%A7os%20de%20marketing..." target="_blank" rel="noopener noreferrer" className="btn-primary text-sm px-4 py-2">
+              <a href="https://wa.me/5534999000559?text=Ol%C3%A1%21%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20servi%C3%A7os%20de%20marketing..." target="_blank" rel="noopener noreferrer" className="btn-primary text-sm my-0 mx-0 px-[16px] py-[9px]">
                 Fale com um especialista
               </a>
               <a href="#sobre" className="btn-outline text-sm px-4 py-2">
