@@ -21,7 +21,7 @@ const ContactForm = () => {
 
     try {
       // Create mailto link with form data
-      const subject = encodeURIComponent('Solicitação de Análise Gratuita - Ads Flow');
+      const subject = encodeURIComponent('Solicitação de Análise Profissional - Ads Flow');
       const body = encodeURIComponent(`
 Nome: ${formData.name}
 E-mail: ${formData.email}
@@ -37,7 +37,7 @@ ${formData.message}
 
       toast({
         title: "Mensagem enviada!",
-        description: "Seu cliente de e-mail foi aberto. Complete o envio para receber sua análise gratuita.",
+        description: "Seu cliente de e-mail foi aberto. Complete o envio para receber sua análise profissional.",
       });
 
       // Reset form
@@ -72,7 +72,7 @@ ${formData.message}
         <div className="max-w-2xl mx-auto">
           <div className="text-center mb-8">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-              Solicite uma <span className="gradient-text">Análise Gratuita</span>
+              Solicite sua <span className="gradient-text">Análise Profissional</span>
             </h2>
             <p className="text-lg text-text-secondary">
               Descubra oportunidades de crescimento para o seu negócio com nossa análise especializada.

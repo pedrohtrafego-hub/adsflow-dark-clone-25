@@ -1,5 +1,5 @@
 import { CheckCircle, Search, Share2, TrendingUp } from "lucide-react";
-import googleAdsDashboard from "@/assets/google-ads-dashboard.jpg";
+import googleAdsDashboard from "@/assets/google-ads-new.png";
 import metaAdsDashboard from "@/assets/meta-ads-dashboard.jpg";
 import growthMarketing from "@/assets/growth-marketing.jpg";
 import StarsEffect from "./StarsEffect";
@@ -113,11 +113,11 @@ const DetailedServicesSection = () => {
               {/* Image */}
               {service.image && (
                 <div className="lg:col-span-4 lg:order-2 flex justify-center items-start pt-16">
-                  <div className="rounded-xl overflow-hidden border border-white/10 w-full max-w-md h-64">
+                  <div className="rounded-xl overflow-hidden border border-white/10 w-full max-w-md">
                     <img
                       src={service.image}
                       alt={service.imageAlt}
-                      className="w-full h-full object-cover"
+                      className="w-full h-auto object-contain"
                     />
                   </div>
                 </div>
