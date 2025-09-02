@@ -1,4 +1,5 @@
 import { CheckCircle, Target, TrendingUp, Zap } from "lucide-react";
+import ContactForm from "./ContactForm";
 
 const FinalCtaSection = () => {
   return (
@@ -7,7 +8,7 @@ const FinalCtaSection = () => {
         {/* Header */}
         <div className="text-center mb-8">
           <h2 className="text-3xl lg:text-5xl font-bold mb-6">
-            Vamos escalar os seus resultados com <span className="text-primary">marketing de verdade?</span>
+            Vamos escalar os seus resultados com marketing de verdade?
           </h2>
         </div>
         
@@ -44,6 +45,9 @@ const FinalCtaSection = () => {
             Quero Vender Mais Agora
           </a>
         </div>
+
+        {/* Contact Form */}
+        <ContactForm />
 
         {/* Social Proof */}
         <div className="text-gray-300">
