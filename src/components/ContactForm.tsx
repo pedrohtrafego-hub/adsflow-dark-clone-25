@@ -67,7 +67,7 @@ ${formData.message}
   };
 
   return (
-    <section id="formulario" className="py-12 bg-card">
+    <section className="py-12 bg-card">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="max-w-2xl mx-auto">
           <div className="text-center mb-8">
