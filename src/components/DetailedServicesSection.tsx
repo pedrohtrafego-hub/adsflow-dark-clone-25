@@ -60,33 +60,33 @@ const DetailedServicesSection = () => {
   ];
 
   return (
-    <section className="py-4 lg:py-8 bg-background relative overflow-hidden">
+    <section className="py-2 lg:py-4 bg-background relative overflow-hidden">
       <StarsEffect />
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
         {services.map((service, index) => (
-          <div key={service.id} className={`${index > 0 ? 'mt-12' : ''}`}>
-            <div className="grid lg:grid-cols-12 gap-4 lg:gap-8 items-start">
+          <div key={service.id} className={`${index > 0 ? 'mt-8' : ''}`}>
+            <div className="grid lg:grid-cols-12 gap-4 lg:gap-6 items-start">
               {/* Content */}
-            <div className="lg:col-span-8 space-y-6 lg:order-1">
-                <div className="flex items-center gap-4 mb-2">
-                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
-                    <service.icon className="w-6 h-6 text-primary" />
+            <div className="lg:col-span-8 space-y-4 lg:order-1">
+                <div className="flex items-center gap-4 mb-1">
+                  <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
+                    <service.icon className="w-5 h-5 text-primary" />
                   </div>
-                  <h2 className="text-3xl lg:text-4xl font-bold text-white whitespace-nowrap">
+                  <h2 className="text-2xl lg:text-3xl font-bold text-white">
                     {service.title}
                   </h2>
                 </div>
 
-                <p className="text-lg lg:text-xl text-gray-300 leading-relaxed font-medium">
+                <p className="text-base lg:text-lg text-gray-300 leading-relaxed font-medium">
                   {service.description}
                 </p>
 
                 {/* Benefits List */}
-                <div className="space-y-3">
+                <div className="space-y-2">
                   {service.benefits.map((benefit, benefitIndex) => (
-                    <div key={benefitIndex} className="flex items-start gap-3">
-                      <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                      <span className="text-gray-300 text-lg">{benefit}</span>
+                    <div key={benefitIndex} className="flex items-start gap-2">
+                      <CheckCircle className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
+                      <span className="text-gray-300 text-sm lg:text-base">{benefit}</span>
                     </div>
                   ))}
                 </div>
@@ -112,12 +112,12 @@ const DetailedServicesSection = () => {
 
               {/* Image */}
               {service.image && (
-                <div className="lg:col-span-4 lg:order-2 flex justify-start items-start pt-4 lg:pt-8 lg:pl-4">
-                  <div className="rounded-xl overflow-hidden border border-white/10 w-full max-w-sm lg:max-w-md">
+                <div className="lg:col-span-4 lg:order-2 flex justify-start items-start pt-2 lg:pt-4">
+                  <div className="rounded-lg overflow-hidden border border-white/10 w-full max-w-[200px] lg:max-w-[240px] ml-0 lg:ml-[-2rem]">
                     <img
                       src={service.image}
                       alt={service.imageAlt}
-                      className="w-full h-auto object-contain aspect-[4/3]"
+                      className="w-full h-[150px] lg:h-[180px] object-cover"
                     />
                   </div>
                 </div>
