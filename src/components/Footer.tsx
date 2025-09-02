@@ -1,5 +1,6 @@
 import { Phone, Mail, Clock, Send } from "lucide-react";
 import { useState } from "react";
+
 const Footer = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -8,22 +9,23 @@ const Footer = () => {
     company: "",
     objective: ""
   });
+
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const {
-      name,
-      value
-    } = e.target;
+    const { name, value } = e.target;
     setFormData(prev => ({
       ...prev,
       [name]: value
     }));
   };
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // Handle form submission here
     console.log("Form submitted:", formData);
   };
-  return <footer id="contato" className="section-gradient">
+
+  return (
+    <footer id="contato" className="section-gradient">
       <div className="container mx-auto px-4 lg:px-8 py-12">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16">
           {/* Contact Info */}
@@ -59,8 +61,8 @@ const Footer = () => {
                 </div>
                 <div>
                   <div className="font-semibold">Horário de Atendimento</div>
-                  <div className="text-gray-300">Segunda a Sexta, 8h às 18h.</div>
-                  <div className="text-gray-300">Sábado, 8h às 12h.</div>
+                  <div className="text-gray-300">Segunda a Sexta, 9h às 18h.</div>
+                  <div className="text-gray-300">Sábado, 9h às 13h.</div>
                 </div>
               </div>
             </div>
@@ -82,27 +84,70 @@ const Footer = () => {
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
-                  <input type="text" name="name" placeholder="Seu nome" value={formData.name} onChange={handleInputChange} className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-gray-300 focus:border-primary focus:outline-none transition-colors" required />
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Seu nome"
+                    value={formData.name}
+                    onChange={handleInputChange}
+                    className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-gray-300 focus:border-primary focus:outline-none transition-colors"
+                    required
+                  />
                 </div>
                 <div>
-                  <input type="email" name="email" placeholder="Seu e-mail" value={formData.email} onChange={handleInputChange} className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-gray-300 focus:border-primary focus:outline-none transition-colors" required />
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Seu e-mail"
+                    value={formData.email}
+                    onChange={handleInputChange}
+                    className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-gray-300 focus:border-primary focus:outline-none transition-colors"
+                    required
+                  />
                 </div>
               </div>
 
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
-                  <input type="tel" name="phone" placeholder="Seu telefone" value={formData.phone} onChange={handleInputChange} className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-gray-300 focus:border-primary focus:outline-none transition-colors" required />
+                  <input
+                    type="tel"
+                    name="phone"
+                    placeholder="Seu telefone"
+                    value={formData.phone}
+                    onChange={handleInputChange}
+                    className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-gray-300 focus:border-primary focus:outline-none transition-colors"
+                    required
+                  />
                 </div>
                 <div>
-                  <input type="text" name="company" placeholder="Sua empresa" value={formData.company} onChange={handleInputChange} className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-gray-300 focus:border-primary focus:outline-none transition-colors" required />
+                  <input
+                    type="text"
+                    name="company"
+                    placeholder="Sua empresa"
+                    value={formData.company}
+                    onChange={handleInputChange}
+                    className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-gray-300 focus:border-primary focus:outline-none transition-colors"
+                    required
+                  />
                 </div>
               </div>
 
               <div>
-                <textarea name="objective" placeholder="Qual o objetivo da sua campanha?" value={formData.objective} onChange={handleInputChange} rows={4} className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-gray-300 focus:border-primary focus:outline-none transition-colors resize-none" required />
+                <textarea
+                  name="objective"
+                  placeholder="Qual o objetivo da sua campanha?"
+                  value={formData.objective}
+                  onChange={handleInputChange}
+                  rows={4}
+                  className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-gray-300 focus:border-primary focus:outline-none transition-colors resize-none"
+                  required
+                />
               </div>
 
-              <button type="submit" className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-semibold py-4 px-6 rounded-lg transition-all duration-300 hover:scale-105 flex items-center justify-center gap-2">
+              <button
+                type="submit"
+                className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-semibold py-4 px-6 rounded-lg transition-all duration-300 hover:scale-105 flex items-center justify-center gap-2"
+              >
                 <Send className="w-5 h-5" />
                 Enviar Mensagem
               </button>
@@ -120,6 +165,8 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </footer>;
+    </footer>
+  );
 };
+
 export default Footer;
