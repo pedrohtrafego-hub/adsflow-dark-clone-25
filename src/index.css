@@ -145,12 +145,10 @@
   
   /* Gradient Text Effect */
   .gradient-text {
-    color: hsl(187, 85%, 53%); /* Fallback color */
     background: var(--accent-gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    display: inline-block;
   }
   
   /* Button Variants */
