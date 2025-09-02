@@ -1,6 +1,6 @@
 import { CheckCircle, Target, TrendingUp, Zap } from "lucide-react";
 const FinalCtaSection = () => {
-  return <section className="py-8 lg:py-16 section-gradient">
+  return <section className="py-4 lg:py-8 section-gradient">
       <div className="container mx-auto px-4 lg:px-8 text-center">
         {/* Header */}
         <div className="text-center mb-8">

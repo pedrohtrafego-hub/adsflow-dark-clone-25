@@ -1,7 +1,7 @@
 import { CheckCircle, Search, Share2, TrendingUp } from "lucide-react";
-import googleAdsDashboard from "@/assets/google-ads-new.png";
-import metaAdsDashboard from "@/assets/meta-ads-dashboard.jpg";
-import growthMarketing from "@/assets/growth-marketing.jpg";
+import googleAdsDashboard from "@/assets/google-ads-dashboard-new.jpg";
+import metaAdsDashboard from "@/assets/meta-ads-dashboard-new.jpg";
+import growthMarketing from "@/assets/growth-marketing-new.jpg";
 import StarsEffect from "./StarsEffect";
 
 const DetailedServicesSection = () => {
@@ -60,12 +60,12 @@ const DetailedServicesSection = () => {
   ];
 
   return (
-    <section className="py-8 lg:py-12 bg-background relative overflow-hidden">
+    <section className="py-4 lg:py-8 bg-background relative overflow-hidden">
       <StarsEffect />
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
         {services.map((service, index) => (
-          <div key={service.id} className={`${index > 0 ? 'mt-20' : ''}`}>
-            <div className="grid lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+          <div key={service.id} className={`${index > 0 ? 'mt-12' : ''}`}>
+            <div className="grid lg:grid-cols-12 gap-4 lg:gap-8 items-start">
               {/* Content */}
             <div className="lg:col-span-8 space-y-6 lg:order-1">
                 <div className="flex items-center gap-4 mb-2">
@@ -112,12 +112,12 @@ const DetailedServicesSection = () => {
 
               {/* Image */}
               {service.image && (
-                <div className="lg:col-span-4 lg:order-2 flex justify-center items-start pt-16">
-                  <div className="rounded-xl overflow-hidden border border-white/10 w-full max-w-md">
+                <div className="lg:col-span-4 lg:order-2 flex justify-start items-start pt-4 lg:pt-8 lg:pl-4">
+                  <div className="rounded-xl overflow-hidden border border-white/10 w-full max-w-sm lg:max-w-md">
                     <img
                       src={service.image}
                       alt={service.imageAlt}
-                      className="w-full h-auto object-contain"
+                      className="w-full h-auto object-contain aspect-[4/3]"
                     />
                   </div>
                 </div>
