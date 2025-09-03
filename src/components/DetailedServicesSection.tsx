@@ -56,7 +56,7 @@ const DetailedServicesSection = () => {
 
                 {/* CTA */}
                  <div className="pt-4">
-                   <a href={service.id === "google-ads" ? "https://wa.me/5534999000559?text=Ol%C3%A1!%20%F0%9F%98%80%0AGostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20tr%C3%A1fego%20pago%20no%20Google%20Ads..." : service.id === "meta-ads" ? "https://wa.me/5534999000559?text=Ol%C3%A1!%20%F0%9F%98%84%0AGostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20tr%C3%A1fego%20pago%20no%20Meta%20Ads..." : "https://wa.me/5534999000559?text=Ol%C3%A1%21%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20servi%C3%A7os%20de%20marketing..."} target="_blank" rel="noopener noreferrer" className="btn-primary">
+                   <a href={service.id === "google-ads" ? "https://wa.me/5534999000559?text=Ol%C3%A1!%20%F0%9F%98%80%0AGostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20tr%C3%A1fego%20pago%20no%20Google%20Ads..." : service.id === "meta-ads" ? "https://wa.me/5534999000559?text=Ol%C3%A1!%20%F0%9F%98%84%0AGostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20tr%C3%A1fego%20pago%20no%20Meta%20Ads..." : "https://wa.me/5534999000559?text=Ol%C3%A1%21%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20servi%C3%A7os%20de%20marketing..."} target="_blank" rel="noopener noreferrer" className="btn-primary px-[10px] py-[9px]">
                       {service.cta}
                     </a>
                  </div>
