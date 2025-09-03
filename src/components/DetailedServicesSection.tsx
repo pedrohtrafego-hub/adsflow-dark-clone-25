@@ -26,7 +26,7 @@ const DetailedServicesSection = () => {
     benefits: ["Automações de marketing avançadas.", "Análise completa do funil de vendas.", "Descoberta acelerada do que realmente funciona.", "Crescimento previsível e escalável.", "Menos desperdício e mais resultados.", "Maior vantagem competitiva no mercado."],
     cta: "Acelerar Crescimento"
   }];
-  return <section className="py-2 lg:py-4 bg-background relative overflow-hidden">
+  return <section className="py-1 lg:py-2 bg-background relative overflow-hidden">
       <StarsEffect />
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
         {services.map((service, index) => <div key={service.id} className={`${index > 0 ? 'mt-8' : ''}`}>
@@ -55,11 +55,11 @@ const DetailedServicesSection = () => {
                 </div>
 
                 {/* CTA */}
-                <div className="pt-4">
-                  <a href={service.id === "google-ads" ? "https://wa.me/5534999000559?text=Ol%C3%A1!%20%F0%9F%98%80%0AGostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20tr%C3%A1fego%20pago%20no%20Google%20Ads..." : service.id === "meta-ads" ? "https://wa.me/5534999000559?text=Ol%C3%A1!%20%F0%9F%98%84%0AGostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20tr%C3%A1fego%20pago%20no%20Meta%20Ads..." : "https://wa.me/5534999000559?text=Ol%C3%A1%21%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20servi%C3%A7os%20de%20marketing..."} target="_blank" rel="noopener noreferrer" className="btn-primary px-[10px] py-[8px]">
-                     {service.cta}
-                   </a>
-                </div>
+                 <div className="pt-4">
+                   <a href={service.id === "google-ads" ? "https://wa.me/5534999000559?text=Ol%C3%A1!%20%F0%9F%98%80%0AGostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20tr%C3%A1fego%20pago%20no%20Google%20Ads..." : service.id === "meta-ads" ? "https://wa.me/5534999000559?text=Ol%C3%A1!%20%F0%9F%98%84%0AGostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20tr%C3%A1fego%20pago%20no%20Meta%20Ads..." : "https://wa.me/5534999000559?text=Ol%C3%A1%21%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20servi%C3%A7os%20de%20marketing..."} target="_blank" rel="noopener noreferrer" className="btn-primary">
+                      {service.cta}
+                    </a>
+                 </div>
               </div>
             </div>
           </div>)}
