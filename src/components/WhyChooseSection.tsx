@@ -4,8 +4,8 @@ const WhyChooseSection = () => {
   const benefits = [
     {
       icon: Target,
-      title: "Resultados mensuráveis e consistentes",
-      description: "Acompanhamento em tempo real de todas as métricas."
+      title: "Resultados reais e consistentes",
+      description: "Monitoramento em tempo real de todas as métricas."
     },
     {
       icon: TrendingUp,
@@ -18,24 +18,9 @@ const WhyChooseSection = () => {
       description: "Insights profundos para otimizar continuamente."
     },
     {
-      icon: Zap,
-      title: "Implementação rápida",
-      description: "Campanhas no ar em até 48 horas."
-    },
-    {
       icon: Award,
       title: "Agência Certificada",
       description: "Equipe certificada em Google e Meta Ads, Analytics (GA4) e Growth."
-    },
-    {
-      icon: Clock,
-      title: "Suporte dedicado",
-      description: "Atendimento personalizado durante todo o projeto."
-    },
-    {
-      icon: Shield,
-      title: "Transparência total",
-      description: "Relatórios detalhados e acesso completo aos dados."
     },
     {
       icon: TrendingUp,

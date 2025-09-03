@@ -13,10 +13,10 @@ const AboutSection = () => {
                 Sobre a <span className="gradient-text">Ads Flow</span>
               </h2>
               <p className="text-lg text-text-secondary leading-relaxed mb-8">
-                Na Ads Flow, acreditamos que marketing é muito mais do que simplesmente "aparecer" — é criar conexões reais com as pessoas certas e transformar cada interação em resultados concretos. Desde 2023, atuamos como parceira estratégica de empresas que buscam crescimento sustentável e previsível, com foco total em performance e retorno sobre investimento.
+                Na Ads Flow, acreditamos que marketing vai além de "aparecer" — é criar conexões reais e gerar resultados concretos. Desde 2023, somos parceiros estratégicos de empresas que buscam crescimento sustentável, com foco em performance e ROI.
               </p>
               <p className="text-lg text-text-secondary leading-relaxed">
-                Com uma equipe de especialistas certificados nas principais plataformas e ferramentas do mercado, desenvolvemos estratégias personalizadas que unem tráfego pago, criação de sites de alta conversão, gestão de redes sociais, funis de vendas completos, captação e produção de vídeos profissionais e análise avançada de dados. Nosso objetivo é acompanhar cada etapa da jornada do seu cliente, desde o primeiro contato até a fidelização, garantindo que cada ação tenha um impacto mensurável.
+                Nossa equipe certificada desenvolve estratégias personalizadas que unem tráfego pago, criação de sites de alta conversão, redes sociais, funis de vendas, produção de vídeos e análise de dados. Acompanhamos toda a jornada do cliente para garantir ações que realmente impactam no resultado.
               </p>
             </div>
 

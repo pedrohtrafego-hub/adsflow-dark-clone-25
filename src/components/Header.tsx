@@ -8,7 +8,7 @@ const Header = () => {
     { label: "Sobre Nós", href: "#sobre" },
     { label: "Serviços", href: "#servicos" },
     { label: "Depoimentos", href: "#depoimentos" },
-    { label: "Contato", href: "#formulario" },
+    { label: "Contato", href: "#final-cta" },
   ];
 
   return (

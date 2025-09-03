@@ -1,11 +1,11 @@
 import { CheckCircle, Target, TrendingUp, Zap } from "lucide-react";
 const FinalCtaSection = () => {
-  return <section className="py-2 lg:py-4 section-gradient">
+  return <section id="final-cta" className="py-2 lg:py-4 section-gradient">
       <div className="container mx-auto px-4 lg:px-8 text-center">
         {/* Header */}
         <div className="text-center mb-4">
           <h2 className="text-3xl lg:text-5xl font-bold mb-6">
-            Vamos escalar os seus resultados com <span className="text-primary">marketing de verdade?</span>
+            Preparado para crescer de <span className="text-primary">verdade?</span>
           </h2>
         </div>
         
@@ -38,13 +38,6 @@ const FinalCtaSection = () => {
           </a>
         </div>
 
-        {/* Social Proof */}
-        <div className="text-gray-300">
-          <p className="text-center mb-2">
-            📞 Reunião de alinhamento estratégico. ⚡ Implementação em até 48 horas. 📊 Relatórios semanais de performance.
-          </p>
-          
-        </div>
       </div>
     </section>;
 };

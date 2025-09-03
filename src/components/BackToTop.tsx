@@ -31,7 +31,7 @@ const BackToTop = () => {
   return (
     <button
       onClick={scrollToTop}
-      className="fixed bottom-20 left-6 z-40 bg-primary/90 hover:bg-primary text-white p-3 rounded-full shadow-lg transition-all duration-300 hover:scale-110 text-sm font-medium flex items-center gap-2"
+      className="fixed bottom-20 left-6 z-40 bg-blue-400/90 hover:bg-blue-400 text-white p-3 rounded-full shadow-lg transition-all duration-300 hover:scale-110 text-sm font-medium flex items-center gap-2"
       aria-label="Voltar ao topo"
     >
       <ChevronUp size={16} />
