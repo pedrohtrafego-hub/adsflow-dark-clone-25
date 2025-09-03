@@ -20,13 +20,13 @@ const HeroSection = () => {
             </h2>
 
             {/* Description */}
-            <p className="text-xl md:text-2xl text-text-secondary leading-relaxed max-w-3xl mb-8 mx-0 my-0 text-gray-50 text-left py-0 px-0 lg:text-xl font-extrabold">
+            <p className="text-xl md:text-2xl text-text-secondary leading-relaxed max-w-3xl mb-8 mx-0 my-0 text-left py-0 px-0 lg:text-xl font-extrabold text-[#fefefe]">
               Transformamos cliques em clientes e conectamos marcas ao público certo.
             </p>
           </div>
 
           {/* CTA Buttons - Moved down a bit more */}
-          <div className="flex justify-center mb-6 mt-20">
+          <div className="flex justify-center mb-6 mt-16">
             <div className="flex flex-col sm:flex-row gap-4">
               <a href="https://wa.me/5534999000559?text=Ol%C3%A1%21%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20servi%C3%A7os%20de%20marketing..." target="_blank" rel="noopener noreferrer" className="btn-primary text-sm my-0 mx-0 px-[16px] py-[9px]">
                 Fale com um especialista
