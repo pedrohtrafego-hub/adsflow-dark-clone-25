@@ -24,7 +24,7 @@ const Footer = () => {
     console.log("Form submitted:", formData);
   };
   return <footer id="contato" className="section-gradient">
-      <div className="container mx-auto px-4 lg:px-8 py-12">
+      <div className="container mx-auto px-4 lg:px-8 py-8">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16">
           {/* Contact Info */}
           <div className="text-white">
@@ -111,8 +111,8 @@ const Footer = () => {
         </div>
 
         {/* Sub Footer */}
-        <div className="border-t border-white/20 mt-16 pt-8 text-center text-gray-300">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+        <div className="border-t border-white/20 mt-8 pt-4 text-center text-gray-300">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-2">
             <div>
               <p>&copy; 2024 Ads Flow - Agência de Marketing Digital. Todos os direitos reservados.</p>
               <p className="text-sm">CNPJ: 57.350.345/0001-92</p>
