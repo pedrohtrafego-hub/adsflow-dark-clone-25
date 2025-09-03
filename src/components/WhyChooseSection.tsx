@@ -24,8 +24,8 @@ const WhyChooseSection = () => {
     },
     {
       icon: TrendingUp,
-      title: "ROI garantido",
-      description: "Foco em resultados que impactam o faturamento."
+      title: "Mais vendas, menos custo",
+      description: "Gestão focada em resultados que fazem diferença no caixa."
     },
     {
       icon: User,
