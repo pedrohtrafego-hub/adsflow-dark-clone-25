@@ -20,7 +20,7 @@ const ServicesSection = () => {
     },
     {
       icon: Globe,
-      title: "Landing Pages",
+      title: "Criação de Sites",
       description: "Páginas de alta conversão otimizadas para campanhas de tráfego pago."
     },
     {

@@ -24,7 +24,7 @@ const WhyChooseSection = () => {
     },
     {
       icon: TrendingUp,
-      title: "Mais vendas, menos custo",
+      title: "Mais vendas, menos custos",
       description: "Gestão focada em resultados que fazem diferença no caixa."
     },
     {

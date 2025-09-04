@@ -24,7 +24,7 @@ const Footer = () => {
     console.log("Form submitted:", formData);
   };
   return <footer id="contato" className="section-gradient">
-      <div className="container mx-auto px-4 lg:px-8 py-8">
+      <div className="container mx-auto px-4 lg:px-8 py-6">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16">
           {/* Contact Info */}
           <div className="text-white">
@@ -111,11 +111,39 @@ const Footer = () => {
         </div>
 
         {/* Sub Footer */}
-        <div className="border-t border-white/20 mt-8 pt-4 text-center text-gray-300">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-2">
+        <div className="border-t border-white/20 mt-6 pt-3 text-center text-gray-300">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div>
               <p>&copy; 2024 Ads Flow - Agência de Marketing Digital. Todos os direitos reservados.</p>
               <p className="text-sm">CNPJ: 57.350.345/0001-92</p>
+            </div>
+            
+            {/* Social Media Icons */}
+            <div className="flex gap-4">
+              <a 
+                href="https://www.facebook.com/p/Ag%C3%AAncia-Ads-Flow-61572377709165/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors"
+              >
+                <span className="text-xl">📘</span>
+              </a>
+              <a 
+                href="https://www.instagram.com/adsflowmarketing" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors"
+              >
+                <span className="text-xl">📷</span>
+              </a>
+              <a 
+                href="https://www.linkedin.com/company/ads-flow/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors"
+              >
+                <span className="text-xl">💼</span>
+              </a>
             </div>
           </div>
         </div>
