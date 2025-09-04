@@ -13,10 +13,13 @@ const AboutSection = () => {
                 Sobre a <span className="gradient-text">Ads Flow</span>
               </h2>
               <p className="text-lg text-text-secondary leading-relaxed mb-8">
-                Na Ads Flow, acreditamos que marketing vai além de "aparecer" — é criar conexões reais e gerar resultados concretos. Desde 2023, somos parceiros estratégicos de empresas que buscam crescimento sustentável, com foco em performance e ROI.
+                Na Ads Flow, acreditamos que marketing vai além de simplesmente "aparecer" — é criar conexões reais com o público certo e transformar cada interação em resultados concretos. Desde 2023, atuamos como parceiros estratégicos de empresas que buscam crescimento sustentável, com foco em performance e retorno sobre investimento (ROI).
+              </p>
+              <p className="text-lg text-text-secondary leading-relaxed mb-8">
+                À frente da agência está Pedro Corrêa, CEO e Analista de Marketing, graduado em Marketing Digital, com ampla experiência em tráfego pago e estratégias digitais. Certificado em Google Ads (6 certificações) e Google Analytics (GA4), já gerenciou mais de seis dígitos em investimentos em mídia paga, aplicando sempre as melhores práticas e tendências do marketing digital.
               </p>
               <p className="text-lg text-text-secondary leading-relaxed">
-                Nossa equipe certificada desenvolve estratégias personalizadas que unem tráfego pago, criação de sites de alta conversão, redes sociais, funis de vendas, produção de vídeos e análise de dados. Acompanhamos toda a jornada do cliente para garantir ações que realmente impactam no resultado.
+                Nossa equipe desenvolve estratégias personalizadas em tráfego pago, sites de alta conversão, redes sociais, funis de vendas, produção de vídeos e análise de dados — tudo para gerar impacto real no faturamento da sua empresa.
               </p>
             </div>
 
@@ -53,7 +56,7 @@ const AboutSection = () => {
             <div className="rounded-2xl overflow-hidden border border-border">
               <img
                 src={teamMeeting}
-                alt="Equipe Ads Flow em reunião estratégica"
+                alt="Pedro Corrêa, CEO da Ads Flow"
                 className="w-full h-full object-cover"
               />
             </div>
