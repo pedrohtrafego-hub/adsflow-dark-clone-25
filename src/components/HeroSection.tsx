@@ -20,7 +20,7 @@ const HeroSection = () => {
             </h2>
 
             {/* Description */}
-            <p className="text-xl md:text-2xl text-text-secondary leading-relaxed max-w-3xl mb-8 mx-0 my-0 text-left py-0 px-0 lg:text-xl font-extrabold text-[#fefefe]">
+            <p className="text-xl md:text-2xl text-text-secondary leading-relaxed max-w-3xl mb-8 mx-0 my-0 text-left py-0 px-0 lg:text-xl font-extrabold text-zinc-50">
               Transformamos cliques em clientes e conectamos marcas ao público certo.
             </p>
           </div>
