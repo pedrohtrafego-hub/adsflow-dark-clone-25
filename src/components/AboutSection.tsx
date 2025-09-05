@@ -32,7 +32,7 @@ const AboutSection = () => {
           </div>
 
           {/* Key Points - Below Photo */}
-          <div className="flex flex-wrap items-center justify-center gap-4 lg:gap-8 max-w-6xl pt-2 mx-0 my-0 px-0 py-[9px]">
+          <div className="flex flex-wrap items-center justify-center gap-4 lg:gap-8 max-w-6xl pt-2 mx-0 my-0 px-0 py-0">
             <div className="check-item">
               <span className="text-lg">🏆</span>
               <span className="text-sm lg:text-base whitespace-nowrap">Mais de 20 empresas transformadas</span>
