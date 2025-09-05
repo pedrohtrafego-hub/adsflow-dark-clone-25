@@ -114,8 +114,8 @@ const Footer = () => {
         <div className="border-t border-white/20 mt-6 pt-3 text-center text-gray-300">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div>
-              <p>&copy; 2024 Ads Flow - Agência de Marketing Digital. Todos os direitos reservados.</p>
-              <p className="text-sm">CNPJ: 57.350.345/0001-92</p>
+              <p className="text-indigo-100">&copy; 2024 Ads Flow - Agência de Marketing Digital. Todos os direitos reservados.</p>
+              <p className="text-sm text-indigo-100">CNPJ: 57.350.345/0001-92</p>
             </div>
             
             {/* Social Media Icons */}
