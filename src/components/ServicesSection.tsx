@@ -54,7 +54,7 @@ const ServicesSection = () => {
 
         {/* Services Grid - 3x3 Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {services.map((service, index) => <div key={index} className="group p-6 bg-card border border-border hover:border-primary/50 transition-all duration-300 hover:transform hover:scale-105 rounded-lg py-[18px] px-[15px]">
+          {services.map((service, index) => <div key={index} className="group p-6 bg-card border border-border hover:border-primary/50 transition-all duration-300 hover:transform hover:scale-105 rounded-lg px-[15px] py-[19px] my-0 mx-[6px]">
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-primary/20 transition-colors">
                   <service.icon className="w-6 h-6 text-primary" />
