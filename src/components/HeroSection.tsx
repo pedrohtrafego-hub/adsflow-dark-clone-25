@@ -40,7 +40,7 @@ const HeroSection = () => {
           {/* Scroll Indicator */}
           <div className="flex justify-center mb-8 mt-12">
             <a href="#sobre" className="animate-bounce cursor-pointer hover:scale-110 transition-transform">
-              <ChevronDown size={28} className="text-primary" />
+              <ChevronDown size={28} className="text-primary mx-0 my-0 px-0 py-0" />
             </a>
           </div>
         </div>

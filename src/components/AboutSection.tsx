@@ -10,9 +10,7 @@ const AboutSection = () => {
         {/* Main Content Layout */}
         <div className="space-y-4">
           {/* First paragraph */}
-          <p className="text-lg text-text-secondary leading-relaxed max-w-5xl mx-auto text-left text-zinc-50">
-            Na Ads Flow, acreditamos que marketing vai além de simplesmente "aparecer" — é criar conexões reais com o público certo e transformar cada interação em resultados concretos. Desde 2023, atuamos como parceiros estratégicos de empresas que buscam crescimento sustentável, com foco em performance e retorno sobre investimento (ROI).
-          </p>
+          <p className="text-lg text-text-secondary leading-relaxed max-w-5xl mx-auto text-left text-zinc-50">Na Ads Flow, acreditamos que marketing vai além de simplesmente &quot;aparecer&quot; — é criar conexões reais com o público certo e transformar cada interação em resultados concretos. Desde 2023, atuamos como parceiros estratégicos de empresas que buscam crescimento, com foco em performance e retorno sobre investimento (ROI).</p>
 
           {/* Second paragraph */}
           <p className="text-lg text-text-secondary leading-relaxed max-w-5xl mx-auto text-left text-zinc-50">
@@ -34,7 +32,7 @@ const AboutSection = () => {
           </div>
 
           {/* Key Points - Below Photo */}
-          <div className="flex flex-wrap items-center justify-center gap-4 lg:gap-8 max-w-6xl mx-auto pt-2">
+          <div className="flex flex-wrap items-center justify-center gap-4 lg:gap-8 max-w-6xl pt-2 mx-0 px-0 py-px -my-0.5 ">
             <div className="check-item">
               <span className="text-lg">🏆</span>
               <span className="text-sm lg:text-base whitespace-nowrap">Mais de 20 empresas transformadas</span>
