@@ -40,7 +40,7 @@ const WhyChooseSection = () => {
 
         {/* Benefits Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {benefits.map((benefit, index) => <div key={index} className="group p-6 bg-card rounded-xl border border-border hover:border-primary/50 transition-all duration-300 hover:transform hover:scale-105 px-[11px] py-[18px] mx-0 my-0">
+          {benefits.map((benefit, index) => <div key={index} className="group p-6 bg-card rounded-xl border border-border hover:border-primary/50 transition-all duration-300 hover:transform hover:scale-105 my-px mx-[6px] px-[10px] py-[10px]">
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-primary/20 transition-colors">
                   <benefit.icon className="w-6 h-6 text-primary" />
@@ -49,7 +49,7 @@ const WhyChooseSection = () => {
                   <h3 className="text-lg mb-2 transition-colors font-semibold text-teal-300">
                     {benefit.title}
                   </h3>
-                  <p className="text-text-secondary text-zinc-50 font-semibold">
+                  <p className="text-text-secondary text-zinc-50 font-semibold my-0 py-0 mx-px">
                     {benefit.description}
                   </p>
                 </div>
