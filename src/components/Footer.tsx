@@ -27,7 +27,7 @@ const Footer = () => {
       <div className="container mx-auto px-4 lg:px-8 py-6">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16">
           {/* Contact Info */}
-          <div className="text-white">
+          <div className="text-white mx-0 my-0 px-0 py-0">
             <h2 className="text-3xl font-bold mb-8 lg:text-3xl">
               Pronto para escalar seus <span className="gradient-text">resultados</span>?
             </h2>
@@ -66,7 +66,7 @@ const Footer = () => {
             </div>
 
             <div className="text-gray-300">
-              <p className="text-lg leading-relaxed">
+              <p className="leading-relaxed text-lg font-normal mx-0 my-0 px-0 py-0 text-emerald-300">
                 Entre em contato conosco e descubra como podemos transformar 
                 seus investimentos em marketing em resultados reais e mensuráveis.
               </p>
