@@ -38,7 +38,6 @@ const AboutSection = () => {
             <div className="check-item">
               <span className="text-lg">🏆</span>
               <span className="text-sm lg:text-base whitespace-nowrap">Mais de 20 empresas transformadas</span>
-              <span className="text-lg">🏆</span>
             </div>
             <div className="check-item">
               <CheckCircle className="check-icon" />

@@ -2,27 +2,27 @@ import { CheckCircle, Target, TrendingUp, Users, BarChart3, Zap, Award, Clock, S
 const WhyChooseSection = () => {
   const benefits = [{
     icon: Target,
-    title: "Resultados reais e consistentes",
-    description: "Monitoramento em tempo real de todas as métricas."
+    title: "Resultados Reais e Consistentes",
+    description: "Monitoramento em tempo real de todas as métricas importantes."
   }, {
     icon: TrendingUp,
-    title: "Estratégias digitais sob medida",
-    description: "Cada campanha é criada especificamente para seu negócio."
+    title: "Estratégias Digitais Sob Medida",
+    description: "Soluções digitais únicas, adaptadas às necessidades do seu negócio."
   }, {
     icon: BarChart3,
-    title: "Análise de dados avançada",
-    description: "Insights profundos para otimizar continuamente."
+    title: "Análise de Dados Avançada",
+    description: "Transformamos dados em decisões inteligentes e resultados otimizados."
   }, {
     icon: Award,
     title: "Agência Certificada",
     description: "Equipe certificada em Google e Meta Ads, Analytics (GA4) e Growth."
   }, {
     icon: TrendingUp,
-    title: "Mais vendas, menos custos",
+    title: "Mais Vendas, Menos Custos",
     description: "Gestão focada em resultados que fazem diferença no caixa."
   }, {
     icon: User,
-    title: "Foco no cliente",
+    title: "Foco no Cliente",
     description: "Estratégias alinhadas com seus objetivos e necessidades."
   }];
   return <section className="py-6 lg:py-8 section-dark">

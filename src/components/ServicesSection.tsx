@@ -4,11 +4,11 @@ const ServicesSection = () => {
   const services = [{
     icon: Search,
     title: "Google Ads",
-    description: "Campanhas otimizadas para máximo ROI no Google Ads, Search e Display Network."
+    description: "Campanhas inteligentes em todas as redes do Google."
   }, {
     icon: Share2,
     title: "Meta Ads",
-    description: "Estratégias avançadas no Facebook e Instagram para engajamento e conversões."
+    description: "Estratégias no Facebook e Instagram para engajamento e vendas."
   }, {
     icon: TrendingUp,
     title: "Growth Marketing",
@@ -16,7 +16,7 @@ const ServicesSection = () => {
   }, {
     icon: Globe,
     title: "Criação de Sites",
-    description: "Páginas de alta conversão otimizadas para campanhas de tráfego pago."
+    description: "Páginas responsivas, rápidas e otimizadas para máxima conversão."
   }, {
     icon: Target,
     title: "SEO & SEM",
@@ -24,7 +24,7 @@ const ServicesSection = () => {
   }, {
     icon: BarChart3,
     title: "Analytics & BI",
-    description: "Dashboards e relatórios para acompanhar performance em tempo real."
+    description: "Métricas e insights em tempo real para decisões assertivas."
   }, {
     icon: Megaphone,
     title: "Criação de Conteúdo",
@@ -32,7 +32,7 @@ const ServicesSection = () => {
   }, {
     icon: Mail,
     title: "Email Marketing",
-    description: "Automações e campanhas de email para nutrição e conversão de leads."
+    description: "Automação e campanhas para engajar, nutrir e converter leads."
   }, {
     icon: Bot,
     title: "Automação com IA",
