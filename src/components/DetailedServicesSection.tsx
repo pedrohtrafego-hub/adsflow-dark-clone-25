@@ -37,12 +37,12 @@ const DetailedServicesSection = () => {
                   <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
                     <service.icon className="w-5 h-5 text-primary" />
                   </div>
-                  <h2 className="text-2xl lg:text-3xl font-bold text-white">
+                  <h2 className="text-2xl lg:text-3xl font-bold text-teal-300">
                     {service.title}
                   </h2>
                 </div>
 
-                <p className="text-lg lg:text-xl text-gray-300 leading-relaxed font-medium">
+                <p className="text-lg leading-relaxed font-medium lg:text-lg text-zinc-50">
                   {service.description}
                 </p>
 
@@ -50,7 +50,7 @@ const DetailedServicesSection = () => {
                 <div className="space-y-2">
                   {service.benefits.map((benefit, benefitIndex) => <div key={benefitIndex} className="flex items-start gap-2">
                       <CheckCircle className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
-                      <span className="text-gray-300 text-base lg:text-lg">{benefit}</span>
+                      <span className="text-base lg:text-lg font-medium text-cyan-50">{benefit}</span>
                     </div>)}
                 </div>
 
