@@ -1,57 +1,44 @@
 import { Clock, Globe, BarChart3, Search, Share2, TrendingUp, Target, Users, MessageSquare, Megaphone, Smartphone, Mail, Bot } from "lucide-react";
 import StarsEffect from "./StarsEffect";
-
 const ServicesSection = () => {
-  const services = [
-    {
-      icon: Search,
-      title: "Google Ads",
-      description: "Campanhas otimizadas para máximo ROI no Google Ads, Search e Display Network."
-    },
-    {
-      icon: Share2,
-      title: "Meta Ads",
-      description: "Estratégias avançadas no Facebook e Instagram para engajamento e conversões."
-    },
-    {
-      icon: TrendingUp,
-      title: "Growth Marketing",
-      description: "Metodologias de crescimento acelerado baseadas em dados e experimentação."
-    },
-    {
-      icon: Globe,
-      title: "Criação de Sites",
-      description: "Páginas de alta conversão otimizadas para campanhas de tráfego pago."
-    },
-    {
-      icon: Target,
-      title: "SEO & SEM",
-      description: "Otimização orgânica e paga para dominar os resultados de busca."
-    },
-    {
-      icon: BarChart3,
-      title: "Analytics & BI",
-      description: "Dashboards e relatórios para acompanhar performance em tempo real."
-    },
-    {
-      icon: Megaphone,
-      title: "Criação de Conteúdo",
-      description: "Materiais criativos que convertem, do copy aos vídeos publicitários."
-    },
-    {
-      icon: Mail,
-      title: "Email Marketing",
-      description: "Automações e campanhas de email para nutrição e conversão de leads."
-    },
-    {
-      icon: Bot,
-      title: "Automação com IA",
-      description: "Soluções inteligentes para otimizar tarefas e melhorar resultados."
-    }
-  ];
-
-  return (
-    <section id="servicos" className="py-6 lg:py-8 bg-background relative overflow-hidden scroll-mt-16">
+  const services = [{
+    icon: Search,
+    title: "Google Ads",
+    description: "Campanhas otimizadas para máximo ROI no Google Ads, Search e Display Network."
+  }, {
+    icon: Share2,
+    title: "Meta Ads",
+    description: "Estratégias avançadas no Facebook e Instagram para engajamento e conversões."
+  }, {
+    icon: TrendingUp,
+    title: "Growth Marketing",
+    description: "Metodologias de crescimento acelerado baseadas em dados e experimentação."
+  }, {
+    icon: Globe,
+    title: "Criação de Sites",
+    description: "Páginas de alta conversão otimizadas para campanhas de tráfego pago."
+  }, {
+    icon: Target,
+    title: "SEO & SEM",
+    description: "Otimização orgânica e paga para dominar os resultados de busca."
+  }, {
+    icon: BarChart3,
+    title: "Analytics & BI",
+    description: "Dashboards e relatórios para acompanhar performance em tempo real."
+  }, {
+    icon: Megaphone,
+    title: "Criação de Conteúdo",
+    description: "Materiais criativos que convertem, do copy aos vídeos publicitários."
+  }, {
+    icon: Mail,
+    title: "Email Marketing",
+    description: "Automações e campanhas de email para nutrição e conversão de leads."
+  }, {
+    icon: Bot,
+    title: "Automação com IA",
+    description: "Soluções inteligentes para otimizar tarefas e melhorar resultados."
+  }];
+  return <section id="servicos" className="py-6 lg:py-8 bg-background relative overflow-hidden scroll-mt-16">
       <StarsEffect />
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
         {/* Header */}
@@ -67,28 +54,24 @@ const ServicesSection = () => {
 
         {/* Services Grid - 3x3 Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {services.map((service, index) => (
-            <div key={index} className="group p-6 bg-card rounded-xl border border-border hover:border-primary/50 transition-all duration-300 hover:transform hover:scale-105">
+          {services.map((service, index) => <div key={index} className="group p-6 bg-card rounded-xl border border-border hover:border-primary/50 transition-all duration-300 hover:transform hover:scale-105">
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-primary/20 transition-colors">
                   <service.icon className="w-6 h-6 text-primary" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-lg mb-2 group-hover:text-primary transition-colors">
+                  <h3 className="font-semibold text-lg mb-2 transition-colors text-teal-300">
                     {service.title}
                   </h3>
-                  <p className="text-text-secondary">
+                  <p className="text-text-secondary text-zinc-50 font-semibold">
                     {service.description}
                   </p>
                 </div>
               </div>
-            </div>
-          ))}
+            </div>)}
         </div>
 
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default ServicesSection;
