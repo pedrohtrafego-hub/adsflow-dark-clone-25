@@ -10,7 +10,7 @@ const AboutSection = () => {
         {/* Main Content Layout */}
         <div className="space-y-4">
           {/* First paragraph */}
-          <p className="text-lg text-text-secondary leading-relaxed max-w-5xl mx-auto text-left text-zinc-50">Na Ads Flow, acreditamos que marketing vai além de simplesmente &quot;aparecer&quot; — é criar conexões reais com o público certo e transformar cada interação em resultados concretos. Desde 2023, atuamos como parceiros estratégicos de empresas que buscam crescimento, com foco em performance e retorno sobre investimento (ROI).</p>
+          <p className="text-lg text-text-secondary leading-relaxed max-w-5xl mx-auto text-left text-zinc-50">Na Ads Flow, agência de marketing digital em Patos de Minas - MG, acreditamos que marketing vai além de simplesmente "aparecer" — nosso foco é criar conexões reais com o público certo e transformar cada interação em resultados concretos. Desde 2023, atuamos como parceiros estratégicos de empresas que buscam crescimento, com foco em performance e retorno sobre investimento (ROI).</p>
 
           {/* Second paragraph */}
           <p className="text-lg text-text-secondary leading-relaxed max-w-5xl mx-auto text-left text-zinc-50">
