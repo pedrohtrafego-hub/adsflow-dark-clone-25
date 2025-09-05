@@ -33,7 +33,7 @@ const FinalCtaSection = () => {
 
         {/* Main CTA */}
         <div className="mb-2">
-          <a href="https://wa.me/5534999000559?text=Ol%C3%A1%21%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20servi%C3%A7os%20de%20marketing..." target="_blank" rel="noopener noreferrer" className="inline-block bg-primary hover:bg-primary/90 text-primary-foreground font-semibold text-lg px-6 py-2.5 rounded-lg transition-all duration-300 hover:scale-105">
+          <a href="https://wa.me/5534999000559?text=Ol%C3%A1%21%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20servi%C3%A7os%20de%20marketing..." target="_blank" rel="noopener noreferrer" className="inline-block bg-primary hover:bg-primary/90 text-primary-foreground font-semibold text-lg rounded-lg transition-all duration-300 hover:scale-105 py-[6px] px-[18px]">
             Quero Vender Mais Agora
           </a>
         </div>
