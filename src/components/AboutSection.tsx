@@ -25,7 +25,7 @@ const AboutSection = () => {
           </p>
 
           {/* Pedro's Image */}
-          <div className="flex justify-center py-4">
+          <div className="flex justify-center py-2">
             <div className="w-80 h-80">
               <div className="rounded-2xl overflow-hidden border border-border">
                 <img src="/lovable-uploads/517bad4b-a60f-479b-8dcc-0360c2ba9f38.png" alt="Pedro Corrêa, CEO da Ads Flow" className="w-full h-full object-cover" />
@@ -34,7 +34,7 @@ const AboutSection = () => {
           </div>
 
           {/* Key Points - Below Photo */}
-          <div className="flex flex-wrap items-center justify-center gap-4 lg:gap-8 max-w-6xl mx-auto">
+          <div className="flex flex-wrap items-center justify-center gap-4 lg:gap-8 max-w-6xl mx-auto pt-2">
             <div className="check-item">
               <span className="text-lg">🏆</span>
               <span className="text-sm lg:text-base whitespace-nowrap">Mais de 20 empresas transformadas</span>

@@ -12,7 +12,7 @@ const ServicesSection = () => {
   }, {
     icon: TrendingUp,
     title: "Growth Marketing",
-    description: "Metodologias de crescimento acelerado baseadas em dados e experimentação."
+    description: "Metodologias de crescimento acelerado baseadas em dados."
   }, {
     icon: Globe,
     title: "Criação de Sites",
@@ -31,7 +31,7 @@ const ServicesSection = () => {
     description: "Materiais criativos que convertem, do copy aos vídeos publicitários."
   }, {
     icon: Mail,
-    title: "Email Marketing",
+    title: "E-mail Marketing",
     description: "Automação e campanhas para engajar, nutrir e converter leads."
   }, {
     icon: Bot,
