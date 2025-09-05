@@ -66,7 +66,7 @@ const ServicesSection = () => {
         </div>
 
         {/* Services Grid - 3x3 Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <div key={index} className="group p-6 bg-card rounded-xl border border-border hover:border-primary/50 transition-all duration-300 hover:transform hover:scale-105">
               <div className="flex items-start gap-4">
@@ -86,26 +86,6 @@ const ServicesSection = () => {
           ))}
         </div>
 
-        {/* CTA */}
-        <div className="text-center bg-card/50 rounded-2xl p-6 border border-border">
-          <h3 className="text-2xl font-bold mb-4">
-            Preparado para crescer <span className="text-primary">de verdade?</span>
-          </h3>
-          <p className="text-text-secondary mb-6 max-w-2xl mx-auto">
-            Entre em contato conosco e descubra como podemos criar uma estratégia personalizada 
-            para o seu negócio alcançar novos patamares de crescimento.
-          </p>
-          <div className="flex justify-center">
-            <a
-              href="https://wa.me/5534999000559?text=Ol%C3%A1%21%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20servi%C3%A7os%20de%20marketing..."
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-primary"
-            >
-              Solicitar Proposta
-            </a>
-          </div>
-        </div>
       </div>
     </section>
   );
