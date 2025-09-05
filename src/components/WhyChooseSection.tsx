@@ -25,7 +25,7 @@ const WhyChooseSection = () => {
     title: "Foco no cliente",
     description: "Estratégias alinhadas com seus objetivos e necessidades."
   }];
-  return <section className="py-8 lg:py-12 section-dark">
+  return <section className="py-6 lg:py-8 section-dark">
       <div className="container mx-auto px-4 lg:px-8">
         {/* Header */}
         <div className="text-center mb-12">
@@ -58,7 +58,7 @@ const WhyChooseSection = () => {
         </div>
 
         {/* Bottom CTA */}
-        <div className="text-center mt-16">
+        <div className="text-center mt-12">
           <a href="https://wa.me/5534999000559?text=Ol%C3%A1%21%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20servi%C3%A7os%20de%20marketing..." target="_blank" rel="noopener noreferrer" className="btn-primary text-lg px-[18px] py-[9px]">
             Quero Vender Mais Agora
           </a>

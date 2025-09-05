@@ -9,23 +9,6 @@ const AboutSection = () => {
         
         {/* Main Content Layout */}
         <div className="space-y-4">
-          {/* Key Points - Horizontal Layout - Moved up */}
-          <div className="flex flex-wrap items-center justify-center gap-4 lg:gap-8 max-w-6xl mx-auto mb-6">
-            <div className="check-item">
-              <span className="text-lg">🏆</span>
-              <span className="text-sm lg:text-base whitespace-nowrap">Mais de 20 empresas transformadas</span>
-              <span className="text-lg">🏆</span>
-            </div>
-            <div className="check-item">
-              <CheckCircle className="check-icon" />
-              <span className="text-sm lg:text-base whitespace-nowrap">ROI médio de 300% em campanhas</span>
-            </div>
-            <div className="check-item">
-              <CheckCircle className="check-icon" />
-              <span className="text-sm lg:text-base whitespace-nowrap">Metodologia própria de otimização</span>
-            </div>
-          </div>
-
           {/* First paragraph */}
           <p className="text-lg text-text-secondary leading-relaxed max-w-5xl mx-auto text-left text-zinc-50">
             Na Ads Flow, acreditamos que marketing vai além de simplesmente "aparecer" — é criar conexões reais com o público certo e transformar cada interação em resultados concretos. Desde 2023, atuamos como parceiros estratégicos de empresas que buscam crescimento sustentável, com foco em performance e retorno sobre investimento (ROI).
@@ -47,6 +30,23 @@ const AboutSection = () => {
               <div className="rounded-2xl overflow-hidden border border-border">
                 <img src="/lovable-uploads/517bad4b-a60f-479b-8dcc-0360c2ba9f38.png" alt="Pedro Corrêa, CEO da Ads Flow" className="w-full h-full object-cover" />
               </div>
+            </div>
+          </div>
+
+          {/* Key Points - Below Photo */}
+          <div className="flex flex-wrap items-center justify-center gap-4 lg:gap-8 max-w-6xl mx-auto">
+            <div className="check-item">
+              <span className="text-lg">🏆</span>
+              <span className="text-sm lg:text-base whitespace-nowrap">Mais de 20 empresas transformadas</span>
+              <span className="text-lg">🏆</span>
+            </div>
+            <div className="check-item">
+              <CheckCircle className="check-icon" />
+              <span className="text-sm lg:text-base whitespace-nowrap">ROI médio de 300% em campanhas</span>
+            </div>
+            <div className="check-item">
+              <CheckCircle className="check-icon" />
+              <span className="text-sm lg:text-base whitespace-nowrap">Metodologia própria de otimização</span>
             </div>
           </div>
         </div>
