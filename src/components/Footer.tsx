@@ -66,7 +66,7 @@ const Footer = () => {
             </div>
 
             <div className="text-gray-300">
-              <p className="text-lg leading-relaxed">
+              <p className="leading-relaxed text-lg font-medium text-blue-200">
                 Entre em contato conosco e descubra como podemos transformar 
                 seus investimentos em marketing em resultados reais e mensuráveis.
               </p>
