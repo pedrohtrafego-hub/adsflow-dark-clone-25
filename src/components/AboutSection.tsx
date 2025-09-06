@@ -15,9 +15,7 @@ const AboutSection = () => {
           </p>
 
           {/* Second paragraph */}
-          <p className="text-lg text-text-secondary leading-relaxed max-w-5xl mx-auto text-left text-zinc-50">
-            À frente da agência está Pedro Corrêa, CEO e Analista de Marketing, graduado em Marketing Digital, com ampla experiência em tráfego pago e estratégias digitais. Certificado em Google Ads (6 certificações) e Google Analytics (GA4), já gerenciou mais de seis dígitos em investimentos em mídia paga, aplicando sempre as melhores práticas e tendências do marketing digital.
-          </p>
+          <p className="text-lg text-text-secondary leading-relaxed max-w-5xl mx-auto text-left text-zinc-50">À frente da agência está Pedro Corrêa, CEO e Analista de Marketing, graduado em Marketing Digital, com ampla experiência em tráfego pago e estratégias digitais. Certificado em Google Ads (6 certificações) e Google Analytics (GA4), já gerenciou mais de seis dígitos em investimentos em mídia paga, atendendo empresas no Brasil e no exterior, sempre aplicando as melhores práticas e tendências globais do marketing digital.</p>
 
           {/* Third paragraph - New */}
           <p className="text-lg text-text-secondary leading-relaxed max-w-5xl mx-auto text-left text-zinc-50">
