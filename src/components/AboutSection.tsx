@@ -1,6 +1,6 @@
 import { CheckCircle, Award } from "lucide-react";
 const AboutSection = () => {
-  return <section id="sobre" className="py-4 lg:py-5 bg-background scroll-mt-16">
+  return <section id="sobre" className="py-4 lg:py-5 pb-2 bg-background scroll-mt-16">
       <div className="container mx-auto px-4 lg:px-8">
         {/* Title */}
         <h2 className="text-3xl lg:text-5xl font-bold mb-6 text-center">
@@ -29,8 +29,8 @@ const AboutSection = () => {
             </div>
           </div>
 
-          {/* Key Points - Below Photo */}
-          <div className="flex flex-wrap items-center justify-center gap-4 lg:gap-8 max-w-6xl pt-1 mx-0 my-0 px-0 py-0">
+          {/* Key Points - Right Below Photo */}
+          <div className="flex flex-wrap items-center justify-center gap-4 lg:gap-8 max-w-6xl pt-2 mx-0 my-0 px-0 py-0">
             <div className="check-item">
               <span className="text-lg">🏆</span>
               <span className="text-sm lg:text-base whitespace-nowrap">Mais de 20 empresas transformadas</span>

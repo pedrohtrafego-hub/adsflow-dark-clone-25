@@ -12,13 +12,13 @@ const TestimonialsSection = () => {
     name: "Ricardo Mota",
     company: "Clínica Odontológica",
     rating: 5,
-    text: "Trabalhar com a Ads Flow foi um divisor de águas. Eles não apenas gerenciam nossas campanhas de Google Ads em Patos de Minas, mas também nos educam sobre o processo. Nosso custo por aquisição diminuiu 40% em 2 meses."
+    text: "Trabalhar com a Ads Flow foi um divisor de águas. Em apenas 2 meses, nosso custo por aquisição caiu 40% e ganhamos clareza no processo de campanhas em Patos de Minas."
   }, {
     id: 3,
     name: "Rômulo Nunes",
-    company: "Venda de Automóveis (Boston, EUA)",
+    company: "Loja de Automóveis (Boston, EUA)",
     rating: 5,
-    text: "A parceria com a Ads Flow foi decisiva para expandirmos nossas vendas. Com campanhas bem direcionadas e análise de dados, conseguimos conquistar mais clientes em Boston, mantendo proximidade e suporte de alto nível, mesmo à distância."
+    text: "A Ads Flow foi essencial para expandirmos nossas vendas em Boston, com campanhas precisas e suporte próximo, mesmo à distância."
   }];
   return <section id="depoimentos" className="py-4 lg:py-6 bg-background relative overflow-hidden scroll-mt-16">
       <StarsEffect />
@@ -36,7 +36,7 @@ const TestimonialsSection = () => {
 
         {/* Testimonials Grid */}
         <div className="grid md:grid-cols-3 gap-6 mb-12">
-          {testimonials.map(testimonial => <div key={testimonial.id} className="bg-card rounded-xl border border-border p-5 hover:border-primary/50 transition-all duration-300 hover:transform hover:scale-105 h-[280px] flex flex-col justify-between">
+          {testimonials.map(testimonial => <div key={testimonial.id} className="bg-card rounded-xl border border-border p-6 hover:border-primary/50 transition-all duration-300 hover:transform hover:scale-105 h-[320px] flex flex-col justify-between">
               {/* Rating Stars */}
               <div className="flex items-center gap-1 mb-6">
                 {[...Array(testimonial.rating)].map((_, i) => <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />)}
