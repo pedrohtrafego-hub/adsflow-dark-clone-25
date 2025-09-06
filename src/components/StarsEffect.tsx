@@ -24,7 +24,7 @@ function BlinkingStars() {
       const positions = ref.current.geometry.attributes.position;
       for (let i = 0; i < positions.count; i++) {
         let z = positions.getZ(i);
-        z += delta * 1; // Velocidade do movimento para frente
+        z += delta * 2; // Velocidade do movimento para frente
         if (z > 10) z = -15; // Reset quando sai da tela
         positions.setZ(i, z);
       }
@@ -72,12 +72,12 @@ function SpiralComets() {
     comets.forEach((comet, index) => {
       if (meshRefs.current[index]) {
         // Movimento espiral
-        comet.angle += delta * comet.speed * 0.5;
+        comet.angle += delta * comet.speed;
         const x = Math.cos(comet.angle) * comet.radius;
         const y = Math.sin(comet.angle) * comet.radius;
         
         // Movimento para frente
-        comet.z += delta * 1.5;
+        comet.z += delta * 3;
         if (comet.z > 15) {
           comet.z = -15;
           comet.angle = Math.random() * Math.PI * 2;
@@ -86,7 +86,7 @@ function SpiralComets() {
         meshRefs.current[index].position.set(x, y, comet.z);
         
         // Rotação do cometa
-        meshRefs.current[index].rotation.z += delta * 1;
+        meshRefs.current[index].rotation.z += delta * 2;
       }
     });
   });

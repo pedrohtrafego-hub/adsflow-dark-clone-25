@@ -30,9 +30,9 @@ const WhyChooseSection = () => {
         {/* Header */}
         <div className="text-center mb-12">
           <h2 className="text-3xl lg:text-5xl font-bold mb-6">
-            Por que escolher a <span className="gradient-text font-bold">Ads Flow</span>?
+            Por que escolher a <span className="gradient-text">Ads Flow</span>?
           </h2>
-          <p className="text-xl text-text-secondary max-w-3xl mx-auto text-center font-medium text-red-100">
+          <p className="text-xl text-text-secondary max-w-3xl mx-auto text-left text-fuchsia-100">
             Nossa abordagem única combina tecnologia, estratégia e experiência 
             para entregar resultados excepcionais para o seu negócio.
           </p>
@@ -40,7 +40,7 @@ const WhyChooseSection = () => {
 
         {/* Benefits Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {benefits.map((benefit, index) => <div key={index} className="group p-6 bg-card rounded-xl border border-border hover:border-primary/50 transition-all duration-300 hover:transform hover:scale-105 my-px mx-[6px] px-[10px] py-[10px]">
+          {benefits.map((benefit, index) => <div key={index} className="group p-6 bg-card rounded-xl border border-border hover:border-primary/50 transition-all duration-300 hover:transform hover:scale-105">
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-primary/20 transition-colors">
                   <benefit.icon className="w-6 h-6 text-primary" />
@@ -49,7 +49,7 @@ const WhyChooseSection = () => {
                   <h3 className="text-lg mb-2 transition-colors font-semibold text-teal-300">
                     {benefit.title}
                   </h3>
-                  <p className="text-text-secondary text-zinc-50 font-semibold my-0 py-0 mx-px">
+                  <p className="text-text-secondary text-zinc-50 font-semibold">
                     {benefit.description}
                   </p>
                 </div>

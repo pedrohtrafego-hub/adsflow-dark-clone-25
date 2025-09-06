@@ -20,27 +20,14 @@ const Footer = () => {
   };
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    
-    // Create mailto link with form data
-    const subject = encodeURIComponent('Solicitação de Análise Gratuita - Ads Flow');
-    const body = encodeURIComponent(`
-Nome: ${formData.name}
-E-mail: ${formData.email}
-Telefone: ${formData.phone}
-Empresa: ${formData.company}
-
-Objetivo no Marketing:
-${formData.objective}
-    `);
-    
-    const mailtoLink = `mailto:adsflowagencia@gmail.com?subject=${subject}&body=${body}`;
-    window.location.href = mailtoLink;
+    // Handle form submission here
+    console.log("Form submitted:", formData);
   };
   return <footer id="contato" className="section-gradient">
       <div className="container mx-auto px-4 lg:px-8 py-6">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16">
           {/* Contact Info */}
-          <div className="text-white mx-0 my-0 px-0 py-0">
+          <div className="text-white">
             <h2 className="text-3xl font-bold mb-8 lg:text-3xl">
               Pronto para escalar seus <span className="gradient-text">resultados</span>?
             </h2>
@@ -79,7 +66,7 @@ ${formData.objective}
             </div>
 
             <div className="text-gray-300">
-              <p className="leading-relaxed text-lg font-normal mx-0 my-0 px-0 py-0 text-emerald-300">
+              <p className="text-lg leading-relaxed">
                 Entre em contato conosco e descubra como podemos transformar 
                 seus investimentos em marketing em resultados reais e mensuráveis.
               </p>
@@ -112,7 +99,7 @@ ${formData.objective}
               </div>
 
               <div>
-                <textarea name="objective" placeholder="Qual o seu objetivo no marketing?" value={formData.objective} onChange={handleInputChange} rows={4} className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-gray-300 focus:border-primary focus:outline-none transition-colors resize-none" required />
+                <textarea name="objective" placeholder="Qual o objetivo da sua campanha?" value={formData.objective} onChange={handleInputChange} rows={4} className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-gray-300 focus:border-primary focus:outline-none transition-colors resize-none" required />
               </div>
 
               <button type="submit" className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-semibold py-4 px-6 rounded-lg transition-all duration-300 hover:scale-105 flex items-center justify-center gap-2">
@@ -127,8 +114,8 @@ ${formData.objective}
         <div className="border-t border-white/20 mt-6 pt-3 text-center text-gray-300">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div>
-              <p className="text-indigo-100">&copy; 2024 Ads Flow - Agência de Marketing Digital. Todos os direitos reservados.</p>
-              <p className="text-sm text-indigo-100">CNPJ: 57.350.345/0001-92</p>
+              <p>&copy; 2024 Ads Flow - Agência de Marketing Digital. Todos os direitos reservados.</p>
+              <p className="text-sm">CNPJ: 57.350.345/0001-92</p>
             </div>
             
             {/* Social Media Icons */}

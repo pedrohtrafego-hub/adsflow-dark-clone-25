@@ -12,7 +12,7 @@ const ServicesSection = () => {
   }, {
     icon: TrendingUp,
     title: "Growth Marketing",
-    description: "Metodologias de crescimento acelerado baseadas em dados."
+    description: "Metodologias de crescimento acelerado baseadas em dados e experimentação."
   }, {
     icon: Globe,
     title: "Criação de Sites",
@@ -31,7 +31,7 @@ const ServicesSection = () => {
     description: "Materiais criativos que convertem, do copy aos vídeos publicitários."
   }, {
     icon: Mail,
-    title: "E-mail Marketing",
+    title: "Email Marketing",
     description: "Automação e campanhas para engajar, nutrir e converter leads."
   }, {
     icon: Bot,
@@ -46,7 +46,7 @@ const ServicesSection = () => {
           <h2 className="text-3xl lg:text-5xl font-bold mb-6">
             Nossos <span className="gradient-text">Serviços</span>
           </h2>
-          <p className="text-text-secondary max-w-3xl mx-auto text-xl font-medium text-red-100">
+          <p className="text-xl text-text-secondary max-w-3xl mx-auto">
             Oferecemos uma gama completa de serviços de marketing digital 
             para acelerar o crescimento do seu negócio.
           </p>
@@ -54,7 +54,7 @@ const ServicesSection = () => {
 
         {/* Services Grid - 3x3 Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {services.map((service, index) => <div key={index} className="group p-6 bg-card border border-border hover:border-primary/50 transition-all duration-300 hover:transform hover:scale-105 rounded-lg px-[15px] py-[19px] mx-[6px] my-px">
+          {services.map((service, index) => <div key={index} className="group p-6 bg-card rounded-xl border border-border hover:border-primary/50 transition-all duration-300 hover:transform hover:scale-105">
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-primary/20 transition-colors">
                   <service.icon className="w-6 h-6 text-primary" />
