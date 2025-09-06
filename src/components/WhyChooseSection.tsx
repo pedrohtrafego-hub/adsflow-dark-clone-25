@@ -25,7 +25,7 @@ const WhyChooseSection = () => {
     title: "Foco no Cliente",
     description: "Estratégias alinhadas com seus objetivos e necessidades."
   }];
-  return <section className="py-6 lg:py-8 section-dark">
+  return <section className="py-6 section-dark lg:py-[22px]">
       <div className="container mx-auto px-4 lg:px-8">
         {/* Header */}
         <div className="text-center mb-12">
