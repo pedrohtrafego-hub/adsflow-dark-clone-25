@@ -37,7 +37,7 @@ const DetailedServicesSection = () => {
                   <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
                     <service.icon className="w-5 h-5 text-primary" />
                   </div>
-                  <h2 className="text-2xl lg:text-3xl font-bold text-white">
+                  <h2 className="text-2xl font-bold lg:text-3xl text-sky-300">
                     {service.title}
                   </h2>
                 </div>
