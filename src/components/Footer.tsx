@@ -20,7 +20,7 @@ const Footer = () => {
   };
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     // Create email content
     const emailBody = `
       Nome: ${formData.name}
@@ -29,11 +29,11 @@ const Footer = () => {
       Empresa: ${formData.company}
       Objetivo de Marketing: ${formData.objective}
     `;
-    
+
     // Send email using mailto
     const mailtoLink = `mailto:adsflowagencia@gmail.com?subject=Solicitação de Análise Completa - ${formData.company}&body=${encodeURIComponent(emailBody)}`;
     window.location.href = mailtoLink;
-    
+
     // Reset form
     setFormData({
       name: "",
@@ -95,7 +95,7 @@ const Footer = () => {
 
           {/* Contact Form */}
           <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
-            <h3 className="text-2xl font-bold text-white mb-6">Solicite uma Análise Completa</h3>
+            <h3 className="text-2xl font-bold mb-6 text-sky-300">Solicite uma Análise Completa</h3>
             
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid md:grid-cols-2 gap-4">
