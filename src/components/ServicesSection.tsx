@@ -60,7 +60,7 @@ const ServicesSection = () => {
                   <service.icon className="w-6 h-6 text-primary" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-lg mb-2 transition-colors text-sky-300">
+                  <h3 className="font-semibold text-lg mb-2 transition-colors text-[#59ccfd]">
                     {service.title}
                   </h3>
                   <p className="text-text-secondary text-zinc-50 font-semibold">
