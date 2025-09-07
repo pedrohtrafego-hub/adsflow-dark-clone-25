@@ -28,7 +28,7 @@ const TestimonialsSection = () => {
           <h2 className="text-3xl lg:text-5xl font-bold mb-6">
             O que nossos <span className="gradient-text">clientes dizem</span>
           </h2>
-          <p className="text-xl text-text-secondary max-w-3xl mx-auto">
+          <p className="text-xl text-text-secondary max-w-3xl mx-auto font-medium text-[#59ccfd]">
             Resultados reais de empresas que confiaram na nossa expertise 
             para transformar seus investimentos em marketing.
           </p>

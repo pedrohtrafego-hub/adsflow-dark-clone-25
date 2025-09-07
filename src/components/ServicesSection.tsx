@@ -46,7 +46,7 @@ const ServicesSection = () => {
           <h2 className="text-3xl lg:text-5xl font-bold mb-6">
             Nossos <span className="gradient-text">Serviços</span>
           </h2>
-          <p className="text-xl text-text-secondary max-w-3xl mx-auto">
+          <p className="text-text-secondary max-w-3xl mx-auto text-xl font-medium text-[#59ccfd]">
             Oferecemos uma gama completa de serviços de marketing digital 
             para acelerar o crescimento do seu negócio.
           </p>
