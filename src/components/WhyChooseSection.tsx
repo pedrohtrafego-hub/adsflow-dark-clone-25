@@ -46,7 +46,7 @@ const WhyChooseSection = () => {
                   <benefit.icon className="w-6 h-6 text-primary" />
                 </div>
                 <div>
-                  <h3 className="text-lg mb-2 transition-colors font-semibold text-sky-300">
+                  <h3 className="text-lg mb-2 transition-colors font-semibold text-[#6bd8ff]">
                     {benefit.title}
                   </h3>
                   <p className="text-text-secondary text-zinc-50 font-semibold">
