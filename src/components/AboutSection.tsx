@@ -23,15 +23,13 @@ const AboutSection = () => {
           </p>
 
           {/* Pedro's Image */}
-          <div className="flex justify-center py-px">
+          <div className="flex justify-center mb-2">
             <div className="w-80 h-80">
               <div className="rounded-2xl overflow-hidden border border-border">
                 <img src="/lovable-uploads/517bad4b-a60f-479b-8dcc-0360c2ba9f38.png" alt="Pedro Corrêa, CEO da Ads Flow" className="w-full h-full object-cover" />
               </div>
             </div>
           </div>
-
-          {/* Key Points - Below Photo */}
           
         </div>
       </div>

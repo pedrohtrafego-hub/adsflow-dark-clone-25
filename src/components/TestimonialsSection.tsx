@@ -3,22 +3,22 @@ import StarsEffect from "./StarsEffect";
 const TestimonialsSection = () => {
   const testimonials = [{
     id: 1,
-    name: "Paulo H. Silva",
+    name: "Paulo A. Silva",
     company: "Loja de Móveis",
     rating: 5,
-    text: "A Ads Flow transformou nossa presença digital. Com tráfego pago, redes sociais e um site profissional, aumentamos clientes e fortalecemos nossa marca na região."
+    text: "A Ads Flow transformou nossa presença digital. Com campanhas estratégicas e um site profissional, conquistamos mais clientes em Patos de Minas e região."
   }, {
     id: 2,
     name: "Ricardo Mota",
     company: "Clínica Odontológica",
     rating: 5,
-    text: "Trabalhar com a Ads Flow foi um divisor de águas. Eles não apenas gerenciam nossas campanhas, mas nos educam sobre o processo. Nosso custo por aquisição diminuiu 40% em 2 meses."
+    text: "Trabalhar com a Ads Flow foi um divisor de águas. Em apenas 2 meses, nosso custo por aquisição caiu 30% e ganhamos clareza no processo de campanhas em Patos de Minas."
   }, {
     id: 3,
     name: "Mariana Bernardes",
-    company: "Loja de Materiais de Construção",
+    company: "Clínica Estética",
     rating: 5,
-    text: "Profissionais de altíssimo nível! A Ads Flow conseguiu escalar nossa operação de forma sustentável. Passamos de 50 para 500 alunos por mês mantendo a qualidade do lead."
+    text: "Com a Ads Flow, nossa clínica de estética ganhou mais visibilidade e clientes. As campanhas bem direcionadas trouxeram crescimento real e consistente para o negócio."
   }];
   return <section id="depoimentos" className="py-4 lg:py-8 bg-background relative overflow-hidden scroll-mt-16">
       <StarsEffect />
@@ -35,20 +35,20 @@ const TestimonialsSection = () => {
         </div>
 
         {/* Testimonials Grid */}
-        <div className="grid md:grid-cols-3 gap-6 mb-16">
+        <div className="grid md:grid-cols-3 gap-6 mb-8">
           {testimonials.map(testimonial => <div key={testimonial.id} className="bg-card rounded-xl border border-border p-6 hover:border-primary/50 transition-all duration-300 hover:transform hover:scale-105">
               {/* Rating Stars */}
-              <div className="flex items-center gap-1 mb-6">
+              <div className="flex items-center gap-1 mb-4">
                 {[...Array(testimonial.rating)].map((_, i) => <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />)}
               </div>
 
               {/* Testimonial Text */}
-              <blockquote className="text-foreground leading-relaxed mb-6">
+              <blockquote className="text-foreground leading-relaxed mb-4">
                 "{testimonial.text}"
               </blockquote>
 
               {/* Author */}
-              <div className="border-t border-border pt-6">
+              <div className="border-t border-border pt-3">
                 <div className="font-semibold text-lg">{testimonial.name}</div>
                 <div className="text-text-secondary">{testimonial.company}</div>
               </div>

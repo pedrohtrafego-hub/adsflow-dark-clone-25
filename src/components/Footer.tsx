@@ -20,8 +20,28 @@ const Footer = () => {
   };
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission here
-    console.log("Form submitted:", formData);
+    
+    // Create email content
+    const emailBody = `
+      Nome: ${formData.name}
+      Email: ${formData.email}
+      Telefone: ${formData.phone}
+      Empresa: ${formData.company}
+      Objetivo de Marketing: ${formData.objective}
+    `;
+    
+    // Send email using mailto
+    const mailtoLink = `mailto:adsflowagencia@gmail.com?subject=Solicitação de Análise Completa - ${formData.company}&body=${encodeURIComponent(emailBody)}`;
+    window.location.href = mailtoLink;
+    
+    // Reset form
+    setFormData({
+      name: "",
+      email: "",
+      phone: "",
+      company: "",
+      objective: ""
+    });
   };
   return <footer id="contato" className="section-gradient">
       <div className="container mx-auto px-4 lg:px-8 py-6">
@@ -97,7 +117,7 @@ const Footer = () => {
               </div>
 
               <div>
-                <textarea name="objective" placeholder="Qual o objetivo da sua campanha?" value={formData.objective} onChange={handleInputChange} rows={4} className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-gray-300 focus:border-primary focus:outline-none transition-colors resize-none" required />
+                <textarea name="objective" placeholder="Qual o seu objetivo de marketing?" value={formData.objective} onChange={handleInputChange} rows={4} className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-gray-300 focus:border-primary focus:outline-none transition-colors resize-none" required />
               </div>
 
               <button type="submit" className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-semibold py-4 px-6 rounded-lg transition-all duration-300 hover:scale-105 flex items-center justify-center gap-2">
