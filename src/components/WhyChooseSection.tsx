@@ -32,7 +32,7 @@ const WhyChooseSection = () => {
           <h2 className="text-3xl lg:text-5xl font-bold mb-6">
             Por que escolher a <span className="gradient-text">Ads Flow</span>?
           </h2>
-          <p className="text-xl text-text-secondary max-w-3xl mx-auto text-left text-fuchsia-100">
+          <p className="text-xl text-text-secondary max-w-3xl mx-auto text-left text-blue-100">
             Nossa abordagem única combina tecnologia, estratégia e experiência 
             para entregar resultados excepcionais para o seu negócio.
           </p>
