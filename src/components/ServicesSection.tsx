@@ -38,7 +38,7 @@ const ServicesSection = () => {
     title: "Automação com IA",
     description: "Soluções inteligentes para otimizar tarefas e melhorar resultados."
   }];
-  return <section id="servicos" className="py-6 lg:py-8 bg-background relative overflow-hidden scroll-mt-16">
+  return <section id="servicos" className="py-4 lg:py-6 bg-background relative overflow-hidden scroll-mt-16">
       <StarsEffect />
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
         {/* Header */}

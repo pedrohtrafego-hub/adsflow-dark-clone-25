@@ -61,7 +61,7 @@ function CometParticles() {
       
       for (let i = 0; i < positions.length; i += 3) {
         // Move particles forward (towards camera)
-        positions[i + 2] += delta * 3;
+        positions[i + 2] += delta * 1.5;
         
         // Reset particles that have moved past the camera
         if (positions[i + 2] > 5) {
@@ -72,7 +72,7 @@ function CometParticles() {
       }
       
       ref.current.geometry.attributes.position.needsUpdate = true;
-      ref.current.rotation.z += delta * 0.03;
+      ref.current.rotation.z += delta * 0.015;
     }
   });
 
@@ -128,7 +128,7 @@ function CometTrail({ points }: { points: THREE.Vector3[] }) {
   
   useFrame((state, delta) => {
     if (ref.current) {
-      ref.current.position.z += delta * 2;
+      ref.current.position.z += delta * 1;
       
       if (ref.current.position.z > 10) {
         ref.current.position.z = -15;
@@ -168,7 +168,7 @@ function Stars() {
       const positions = ref.current.geometry.attributes.position.array as Float32Array;
       
       for (let i = 0; i < positions.length; i += 3) {
-        positions[i + 2] += delta * 1; // Slower movement for stars
+        positions[i + 2] += delta * 0.5; // Slower movement for stars
         
         if (positions[i + 2] > 5) {
           positions[i] = (Math.random() - 0.5) * 30;
@@ -178,7 +178,7 @@ function Stars() {
       }
       
       ref.current.geometry.attributes.position.needsUpdate = true;
-      ref.current.rotation.z += delta * 0.02;
+      ref.current.rotation.z += delta * 0.01;
     }
   });
 
